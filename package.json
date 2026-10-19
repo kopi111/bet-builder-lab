@@ -1,0 +1,12 @@
+{
+  "name": "bet-builder-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Football match analysis and Bet Builder research tool (simulation only).",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/model.test.js tests/data.test.js",
+    "test:e2e": "node tests/e2e/clickThrough.mjs"
+  }
+}

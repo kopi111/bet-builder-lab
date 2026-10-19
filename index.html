@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bet Builder Lab</title>
+  <meta name="description" content="Football match analysis and Bet Builder research tool. Simulation only: no bets are placed.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <strong>Bet Builder Lab</strong>
+          <small>Match analysis terminal</small>
+        </div>
+      </div>
+      <nav>
+        <a href="#/fixtures" data-route="fixtures">Fixtures</a>
+        <a href="#/match" data-route="match">Match report</a>
+        <a href="#/builder" data-route="builder">Bet Builder</a>
+        <a href="#/saved" data-route="saved">Saved &amp; tracking</a>
+        <a href="#/backtest" data-route="backtest">Backtest</a>
+        <a href="#/settings" data-route="settings">Model settings</a>
+        <a href="#/sources" data-route="sources">Data sources</a>
+      </nav>
+      <p class="sidebar-note">Research and simulation only. Nothing here places a bet or connects to a bookmaker account. Model numbers are estimates, not guarantees.</p>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation">
+          <span aria-hidden="true"></span>
+        </button>
+        <h1 id="page-title">Fixtures</h1>
+        <div class="topbar-status" id="data-status" role="status" aria-live="polite">Checking data…</div>
+      </header>
+      <main id="view" tabindex="-1"></main>
+    </div>
+  </div>
+</body>
+</html>

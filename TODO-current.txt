@@ -1,0 +1,7 @@
+ML model trained on the data (2026-10-19)
+[ ] Football: build pre-match features from cached CSVs (no look-ahead)
+[ ] Train gradient-boosting 1X2 / Over 2.5 models, walk-forward by season
+[ ] Compare with Bet365 closing odds (log loss, ROI, CLV) - honest verdict
+[ ] Predict this week's fixtures -> ml/output/predictions.json
+[ ] Show ML column + model report on dashboard
+[ ] Trading: same for strategy-desk (10y hourly XAU + USD pairs)
