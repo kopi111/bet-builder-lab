@@ -1,5 +1,5 @@
 import { parseCsv } from '../util/csv.js';
-import { seasonCodes } from '../config.js';
+import { LEAGUES, seasonCodes } from '../config.js';
 import { fetchText } from './httpClient.js';
 import { toMatchRecord } from './matchRecord.js';
 import { recordSourceFailure, recordSourceSuccess } from './sourceStatus.js';
@@ -7,6 +7,7 @@ import { recordSourceFailure, recordSourceSuccess } from './sourceStatus.js';
 const SOURCE = 'football-data.co.uk';
 const historyCache = new Map();
 let fixturesPromise;
+const KNOWN_LEAGUES = new Set(LEAGUES.map((league) => league.code));
 
 export function loadLeagueHistory(leagueCode) {
   if (!historyCache.has(leagueCode)) historyCache.set(leagueCode, fetchLeagueHistory(leagueCode));
@@ -53,7 +54,8 @@ async function fetchFixtures() {
   const key = `${SOURCE} fixtures`;
   try {
     const download = await fetchText('/api/fd/fixtures.csv', SOURCE);
-    const fixtures = parseRecords(download.text).sort((a, b) => a.kickoff - b.kickoff);
+    // The feed sometimes lists competitions the model has no history for (e.g. EC, the National League); skip them.
+    const fixtures = parseRecords(download.text).filter((fixture) => KNOWN_LEAGUES.has(fixture.league)).sort((a, b) => a.kickoff - b.kickoff);
     recordSourceSuccess(key, { rows: fixtures.length, fetchedAt: download.fetchedAt, stale: download.staleReason });
     return { fixtures, fetchedAt: download.fetchedAt, staleReason: download.staleReason };
   } catch (error) {

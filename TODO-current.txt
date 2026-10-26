@@ -1,3 +1,14 @@
+2026-10-26 — "Three Markets" page: 1X2, Both Teams To Score, Over/Under 2.5
+
+[x] tools/historyLoader.mjs — shared season loader (pulled out of predict-league.mjs)
+[x] tools/three-markets-study.mjs — walk-forward study of the three markets, 21 leagues x 6 seasons
+      → data/three-markets-study.json (hit rate + ROI per confidence band, blind strategies, trebles, unseen-season check)
+[x] js/ui/threeMarketsView.js — new route #/three: this week's picks for the three markets, each tagged with
+      how similar picks did historically, plus the evidence panel
+[x] nav link + route in index.html / script.js, styles
+[x] npm test + e2e still pass; check the page at 400px
+[x] update memory (bet-builder-lab.md)
+
 ML model trained on the data (2026-10-19)
 [ ] Football: build pre-match features from cached CSVs (no look-ahead)
 [ ] Train gradient-boosting 1X2 / Over 2.5 models, walk-forward by season

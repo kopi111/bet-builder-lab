@@ -1,0 +1,1058 @@
+{
+ "generatedAt": "2026-10-26T15:09:54.289Z",
+ "matches": 34551,
+ "from": "2021-10-19",
+ "to": "2026-10-21",
+ "unseenFrom": "2025-07-01",
+ "unseenMatches": 8731,
+ "leagues": [
+  "E0",
+  "E1",
+  "E2",
+  "E3",
+  "SP1",
+  "SP2",
+  "I1",
+  "I2",
+  "D1",
+  "D2",
+  "F1",
+  "F2",
+  "N1",
+  "P1",
+  "B1",
+  "T1",
+  "G1",
+  "SC0",
+  "SC1",
+  "SC2",
+  "SC3"
+ ],
+ "baseRates": {
+  "home": 0.4343723770657868,
+  "draw": 0.2603687302827704,
+  "away": 0.3052588926514428,
+  "bttsYes": 0.5271048594830829,
+  "over25": 0.5106364504645307
+ },
+ "perLeague": {
+  "E0": {
+   "matches": 1820,
+   "home": 0.4423076923076923,
+   "draw": 0.2379120879120879,
+   "away": 0.31978021978021975,
+   "bttsYes": 0.5554945054945055,
+   "over25": 0.5675824175824176
+  },
+  "E1": {
+   "matches": 2742,
+   "home": 0.4336250911743253,
+   "draw": 0.2600291757840992,
+   "away": 0.3063457330415755,
+   "bttsYes": 0.5185995623632386,
+   "over25": 0.48212983223924144
+  },
+  "E2": {
+   "matches": 2736,
+   "home": 0.43603801169590645,
+   "draw": 0.25182748538011696,
+   "away": 0.3121345029239766,
+   "bttsYes": 0.5091374269005848,
+   "over25": 0.49451754385964913
+  },
+  "E3": {
+   "matches": 2748,
+   "home": 0.42831149927219797,
+   "draw": 0.26819505094614265,
+   "away": 0.3034934497816594,
+   "bttsYes": 0.5192867540029112,
+   "over25": 0.4737991266375546
+  },
+  "SP1": {
+   "matches": 1839,
+   "home": 0.46112017400761285,
+   "draw": 0.2561174551386623,
+   "away": 0.28276237085372485,
+   "bttsYes": 0.5236541598694943,
+   "over25": 0.4817835780315389
+  },
+  "SP2": {
+   "matches": 2270,
+   "home": 0.452863436123348,
+   "draw": 0.28590308370044054,
+   "away": 0.26123348017621145,
+   "bttsYes": 0.4933920704845815,
+   "over25": 0.4343612334801762
+  },
+  "I1": {
+   "matches": 1820,
+   "home": 0.40384615384615385,
+   "draw": 0.27197802197802196,
+   "away": 0.3241758241758242,
+   "bttsYes": 0.5098901098901099,
+   "over25": 0.4824175824175824
+  },
+  "I2": {
+   "matches": 1820,
+   "home": 0.4054945054945055,
+   "draw": 0.3192307692307692,
+   "away": 0.2752747252747253,
+   "bttsYes": 0.5346153846153846,
+   "over25": 0.45714285714285713
+  },
+  "D1": {
+   "matches": 1434,
+   "home": 0.4386331938633194,
+   "draw": 0.2482566248256625,
+   "away": 0.31311018131101814,
+   "bttsYes": 0.601115760111576,
+   "over25": 0.6185495118549512
+  },
+  "D2": {
+   "matches": 1452,
+   "home": 0.43870523415977963,
+   "draw": 0.25550964187327824,
+   "away": 0.30578512396694213,
+   "bttsYes": 0.5853994490358126,
+   "over25": 0.587465564738292
+  },
+  "F1": {
+   "matches": 1591,
+   "home": 0.4368321810182275,
+   "draw": 0.23758642363293525,
+   "away": 0.32558139534883723,
+   "bttsYes": 0.5493400377121307,
+   "over25": 0.5424261470773099
+  },
+  "F2": {
+   "matches": 1681,
+   "home": 0.42415229030339086,
+   "draw": 0.27543129089827484,
+   "away": 0.3004164187983343,
+   "bttsYes": 0.49375371802498513,
+   "over25": 0.4592504461629982
+  },
+  "N1": {
+   "matches": 1461,
+   "home": 0.43394934976043803,
+   "draw": 0.24777549623545517,
+   "away": 0.3182751540041068,
+   "bttsYes": 0.5728952772073922,
+   "over25": 0.6002737850787132
+  },
+  "P1": {
+   "matches": 1452,
+   "home": 0.43388429752066116,
+   "draw": 0.24517906336088155,
+   "away": 0.3209366391184573,
+   "bttsYes": 0.4896694214876033,
+   "over25": 0.5103305785123967
+  },
+  "B1": {
+   "matches": 1469,
+   "home": 0.43703199455411845,
+   "draw": 0.2471068754254595,
+   "away": 0.31586113002042204,
+   "bttsYes": 0.5289312457454051,
+   "over25": 0.5357385976855004
+  },
+  "T1": {
+   "matches": 1672,
+   "home": 0.45633971291866027,
+   "draw": 0.2458133971291866,
+   "away": 0.29784688995215314,
+   "bttsYes": 0.5520334928229665,
+   "over25": 0.5550239234449761
+  },
+  "G1": {
+   "matches": 1087,
+   "home": 0.41674333026678934,
+   "draw": 0.265869365225391,
+   "away": 0.3173873045078197,
+   "bttsYes": 0.47378104875804966,
+   "over25": 0.48298068077276907
+  },
+  "SC0": {
+   "matches": 1044,
+   "home": 0.45977011494252873,
+   "draw": 0.23563218390804597,
+   "away": 0.3045977011494253,
+   "bttsYes": 0.5181992337164751,
+   "over25": 0.5517241379310345
+  },
+  "SC1": {
+   "matches": 804,
+   "home": 0.41044776119402987,
+   "draw": 0.2810945273631841,
+   "away": 0.30845771144278605,
+   "bttsYes": 0.49129353233830847,
+   "over25": 0.48134328358208955
+  },
+  "SC2": {
+   "matches": 804,
+   "home": 0.42039800995024873,
+   "draw": 0.2462686567164179,
+   "away": 0.3333333333333333,
+   "bttsYes": 0.5335820895522388,
+   "over25": 0.5509950248756219
+  },
+  "SC3": {
+   "matches": 805,
+   "home": 0.4360248447204969,
+   "draw": 0.2596273291925466,
+   "away": 0.30434782608695654,
+   "bttsYes": 0.5354037267080746,
+   "over25": 0.5118012422360249
+  }
+ },
+ "markets": {
+  "result": {
+   "all": {
+    "bets": 34551,
+    "hitRate": 0.49477583861538016,
+    "averageProbability": 0.4826761785715601,
+    "pricedBets": 34480,
+    "priceHitRate": 0.4943445475638051,
+    "averageOdds": 2.0457882830627447,
+    "roi": -0.056305974477957696,
+    "roiInterval": {
+     "low": -0.06717836426914117,
+     "high": -0.046189965197215355
+    },
+    "closingLineValue": -0.061311374703031246
+   },
+   "unseen": {
+    "bets": 8731,
+    "hitRate": 0.48711487802084524,
+    "averageProbability": 0.47514590553220637,
+    "pricedBets": 8719,
+    "priceHitRate": 0.48686776006422755,
+    "averageOdds": 2.033907558206207,
+    "roi": -0.07586076384906504,
+    "roiInterval": {
+     "low": -0.09547883931643486,
+     "high": -0.05345223076040808
+    },
+    "closingLineValue": -0.07019853942944936
+   },
+   "valueOnly": {
+    "bets": 7840,
+    "hitRate": 0.36122448979591837,
+    "averageProbability": 0.4564526729075442,
+    "pricedBets": 7840,
+    "priceHitRate": 0.36122448979591837,
+    "averageOdds": 2.594155612244895,
+    "roi": -0.105205357142857,
+    "roiInterval": {
+     "low": -0.1340625,
+     "high": -0.07691964285714292
+    },
+    "closingLineValue": -0.05491045304590993
+   },
+   "valueOnlyUnseen": {
+    "bets": 1716,
+    "hitRate": 0.33624708624708627,
+    "averageProbability": 0.44422291473764064,
+    "pricedBets": 1716,
+    "priceHitRate": 0.33624708624708627,
+    "averageOdds": 2.6639102564102606,
+    "roi": -0.1415501165501168,
+    "roiInterval": {
+     "low": -0.1988986013986017,
+     "high": -0.08032634032634037
+    },
+    "closingLineValue": -0.06832782968095795
+   },
+   "bands": [
+    {
+     "from": 0,
+     "to": 0.45,
+     "bets": 15828,
+     "hitRate": 0.4013773060399292,
+     "averageProbability": 0.4026613461856582,
+     "pricedBets": 15797,
+     "priceHitRate": 0.401278723808318,
+     "averageOdds": 2.397322909413183,
+     "roi": -0.07385009811989601,
+     "roiInterval": {
+      "low": -0.09087801481293836,
+      "high": -0.055671329999366866
+     },
+     "closingLineValue": -0.06352773875900326,
+     "unseen": {
+      "bets": 4202,
+      "hitRate": 0.4038553069966683,
+      "averageProbability": 0.40271938056432116,
+      "pricedBets": 4195,
+      "priceHitRate": 0.40381406436233613,
+      "averageOdds": 2.3624123957091743,
+      "roi": -0.08418116805721115,
+      "roiInterval": {
+       "low": -0.11833849821215742,
+       "high": -0.05075327771156145
+      },
+      "closingLineValue": -0.0716731600112231
+     }
+    },
+    {
+     "from": 0.45,
+     "to": 0.5,
+     "bets": 6612,
+     "hitRate": 0.47716273442226254,
+     "averageProbability": 0.47378678633380167,
+     "pricedBets": 6601,
+     "priceHitRate": 0.4767459475836994,
+     "averageOdds": 2.0079306165732365,
+     "roi": -0.06531283138918312,
+     "roiInterval": {
+      "low": -0.0898894106953488,
+      "high": -0.04120587789728835
+     },
+     "closingLineValue": -0.06109658403913616,
+     "unseen": {
+      "bets": 1727,
+      "hitRate": 0.4719166184134337,
+      "averageProbability": 0.4737522516644524,
+      "pricedBets": 1726,
+      "priceHitRate": 0.4716106604866744,
+      "averageOdds": 1.9643163383545768,
+      "roi": -0.0962166859791427,
+      "roiInterval": {
+       "low": -0.14096176129779853,
+       "high": -0.049142526071842406
+      },
+      "closingLineValue": -0.07232835084956793
+     }
+    },
+    {
+     "from": 0.5,
+     "to": 0.55,
+     "bets": 4708,
+     "hitRate": 0.5390824129141886,
+     "averageProbability": 0.5231968246433991,
+     "pricedBets": 4702,
+     "priceHitRate": 0.5387069332199064,
+     "averageOdds": 1.811125053168843,
+     "roi": -0.04196086771586584,
+     "roiInterval": {
+      "low": -0.0659485325393451,
+      "high": -0.016824755423224234
+     },
+     "closingLineValue": -0.058783858579414,
+     "unseen": {
+      "bets": 1173,
+      "hitRate": 0.5404944586530265,
+      "averageProbability": 0.5230982005354762,
+      "pricedBets": 1172,
+      "priceHitRate": 0.5401023890784983,
+      "averageOdds": 1.7651365187713275,
+      "roi": -0.06627986348122868,
+      "roiInterval": {
+       "low": -0.1197354948805462,
+       "high": -0.013762798634812294
+      },
+      "closingLineValue": -0.06530235656388819
+     }
+    },
+    {
+     "from": 0.55,
+     "to": 0.6,
+     "bets": 2955,
+     "hitRate": 0.6084602368866329,
+     "averageProbability": 0.5728178676768253,
+     "pricedBets": 2949,
+     "priceHitRate": 0.6076636147846728,
+     "averageOdds": 1.6310749406578455,
+     "roi": -0.026486944727026125,
+     "roiInterval": {
+      "low": -0.05617497456765014,
+      "high": 0.002851814174296352
+     },
+     "closingLineValue": -0.058679711154487675,
+     "unseen": {
+      "bets": 706,
+      "hitRate": 0.6019830028328612,
+      "averageProbability": 0.572512827843416,
+      "pricedBets": 704,
+      "priceHitRate": 0.6008522727272727,
+      "averageOdds": 1.5926420454545462,
+      "roi": -0.06447443181818181,
+      "roiInterval": {
+       "low": -0.12076704545454561,
+       "high": -0.005838068181818165
+      },
+      "closingLineValue": -0.06704672677917732
+     }
+    },
+    {
+     "from": 0.6,
+     "to": 0.65,
+     "bets": 1970,
+     "hitRate": 0.6690355329949239,
+     "averageProbability": 0.6229093794469249,
+     "pricedBets": 1967,
+     "priceHitRate": 0.668530757498729,
+     "averageOdds": 1.4849059481443898,
+     "roi": -0.021520081342145517,
+     "roiInterval": {
+      "low": -0.05347737671581098,
+      "high": 0.0090493136756482
+     },
+     "closingLineValue": -0.05825148654993694,
+     "unseen": {
+      "bets": 450,
+      "hitRate": 0.6711111111111111,
+      "averageProbability": 0.6223544965988923,
+      "pricedBets": 450,
+      "priceHitRate": 0.6711111111111111,
+      "averageOdds": 1.439977777777779,
+      "roi": -0.04828888888888888,
+      "roiInterval": {
+       "low": -0.11166666666666666,
+       "high": 0.013155555555555549
+      },
+      "closingLineValue": -0.06921741488865285
+     }
+    },
+    {
+     "from": 0.65,
+     "to": 0.7,
+     "bets": 1117,
+     "hitRate": 0.7314234556848702,
+     "averageProbability": 0.6736078748653263,
+     "pricedBets": 1111,
+     "priceHitRate": 0.72997299729973,
+     "averageOdds": 1.3632943294329412,
+     "roi": -0.013618361836183595,
+     "roiInterval": {
+      "low": -0.05085508550855106,
+      "high": 0.021755175517551732
+     },
+     "closingLineValue": -0.05947571417630957,
+     "unseen": {
+      "bets": 208,
+      "hitRate": 0.7644230769230769,
+      "averageProbability": 0.6743546307199634,
+      "pricedBets": 207,
+      "priceHitRate": 0.7632850241545893,
+      "averageOdds": 1.3304347826086966,
+      "roi": 0.009227053140096631,
+      "roiInterval": {
+       "low": -0.06801932367149757,
+       "high": 0.08763285024154588
+      },
+      "closingLineValue": -0.07008693344174513
+     }
+    },
+    {
+     "from": 0.7,
+     "to": 0.75,
+     "bets": 694,
+     "hitRate": 0.7997118155619597,
+     "averageProbability": 0.7239143835361721,
+     "pricedBets": 692,
+     "priceHitRate": 0.7991329479768786,
+     "averageOdds": 1.269580924855493,
+     "roi": 0.003930635838150272,
+     "roiInterval": {
+      "low": -0.0353323699421966,
+      "high": 0.04264450867052012
+     },
+     "closingLineValue": -0.057919015814271536,
+     "unseen": {
+      "bets": 152,
+      "hitRate": 0.8421052631578947,
+      "averageProbability": 0.7247110465566681,
+      "pricedBets": 152,
+      "priceHitRate": 0.8421052631578947,
+      "averageOdds": 1.237828947368421,
+      "roi": 0.03730263157894733,
+      "roiInterval": {
+       "low": -0.03394736842105265,
+       "high": 0.10473684210526311
+      },
+      "closingLineValue": -0.06634630111013205
+     }
+    },
+    {
+     "from": 0.75,
+     "to": 1,
+     "bets": 667,
+     "hitRate": 0.841079460269865,
+     "averageProbability": 0.7992610522414993,
+     "pricedBets": 661,
+     "priceHitRate": 0.8396369137670197,
+     "averageOdds": 1.1709379727685318,
+     "roi": -0.020484114977307157,
+     "roiInterval": {
+      "low": -0.05385779122541595,
+      "high": 0.014236006051437187
+     },
+     "closingLineValue": -0.055947215059017036,
+     "unseen": {
+      "bets": 113,
+      "hitRate": 0.8230088495575221,
+      "averageProbability": 0.7949762303051172,
+      "pricedBets": 113,
+      "priceHitRate": 0.8230088495575221,
+      "averageOdds": 1.1629203539823005,
+      "roi": -0.04424778761061948,
+      "roiInterval": {
+       "low": -0.12884955752212388,
+       "high": 0.03398230088495574
+      },
+      "closingLineValue": -0.0626344976587538
+     }
+    }
+   ]
+  },
+  "btts": {
+   "all": {
+    "bets": 34551,
+    "hitRate": 0.5379583803652571,
+    "averageProbability": 0.5649597158921337,
+    "pricedBets": 0,
+    "priceHitRate": null,
+    "averageOdds": null,
+    "roi": null,
+    "roiInterval": null,
+    "closingLineValue": null
+   },
+   "unseen": {
+    "bets": 8731,
+    "hitRate": 0.5454128965754209,
+    "averageProbability": 0.5624495966858083,
+    "pricedBets": 0,
+    "priceHitRate": null,
+    "averageOdds": null,
+    "roi": null,
+    "roiInterval": null,
+    "closingLineValue": null
+   },
+   "valueOnly": {
+    "bets": 0,
+    "hitRate": null,
+    "averageProbability": null,
+    "pricedBets": 0,
+    "priceHitRate": null,
+    "averageOdds": null,
+    "roi": null,
+    "roiInterval": null,
+    "closingLineValue": null
+   },
+   "valueOnlyUnseen": {
+    "bets": 0,
+    "hitRate": null,
+    "averageProbability": null,
+    "pricedBets": 0,
+    "priceHitRate": null,
+    "averageOdds": null,
+    "roi": null,
+    "roiInterval": null,
+    "closingLineValue": null
+   },
+   "bands": [
+    {
+     "from": 0.5,
+     "to": 0.55,
+     "bets": 15805,
+     "hitRate": 0.5108509965200886,
+     "averageProbability": 0.5240788803366115,
+     "pricedBets": 0,
+     "priceHitRate": null,
+     "averageOdds": null,
+     "roi": null,
+     "roiInterval": null,
+     "closingLineValue": null,
+     "unseen": {
+      "bets": 4118,
+      "hitRate": 0.5131131617289947,
+      "averageProbability": 0.5239423202729176,
+      "pricedBets": 0,
+      "priceHitRate": null,
+      "averageOdds": null,
+      "roi": null,
+      "roiInterval": null,
+      "closingLineValue": null
+     }
+    },
+    {
+     "from": 0.55,
+     "to": 0.6,
+     "bets": 11107,
+     "hitRate": 0.5401998739533628,
+     "averageProbability": 0.5726437675418259,
+     "pricedBets": 0,
+     "priceHitRate": null,
+     "averageOdds": null,
+     "roi": null,
+     "roiInterval": null,
+     "closingLineValue": null,
+     "unseen": {
+      "bets": 2817,
+      "hitRate": 0.5662051828186013,
+      "averageProbability": 0.5726079696770076,
+      "pricedBets": 0,
+      "priceHitRate": null,
+      "averageOdds": null,
+      "roi": null,
+      "roiInterval": null,
+      "closingLineValue": null
+     }
+    },
+    {
+     "from": 0.6,
+     "to": 0.65,
+     "bets": 5371,
+     "hitRate": 0.5786631912120648,
+     "averageProbability": 0.6215088840934299,
+     "pricedBets": 0,
+     "priceHitRate": null,
+     "averageOdds": null,
+     "roi": null,
+     "roiInterval": null,
+     "closingLineValue": null,
+     "unseen": {
+      "bets": 1336,
+      "hitRate": 0.5815868263473054,
+      "averageProbability": 0.6208463390803799,
+      "pricedBets": 0,
+      "priceHitRate": null,
+      "averageOdds": null,
+      "roi": null,
+      "roiInterval": null,
+      "closingLineValue": null
+     }
+    },
+    {
+     "from": 0.65,
+     "to": 0.7,
+     "bets": 1863,
+     "hitRate": 0.6156736446591519,
+     "averageProbability": 0.6694722054624329,
+     "pricedBets": 0,
+     "priceHitRate": null,
+     "averageOdds": null,
+     "roi": null,
+     "roiInterval": null,
+     "closingLineValue": null,
+     "unseen": {
+      "bets": 399,
+      "hitRate": 0.5989974937343359,
+      "averageProbability": 0.668305981783977,
+      "pricedBets": 0,
+      "priceHitRate": null,
+      "averageOdds": null,
+      "roi": null,
+      "roiInterval": null,
+      "closingLineValue": null
+     }
+    },
+    {
+     "from": 0.7,
+     "to": 0.75,
+     "bets": 386,
+     "hitRate": 0.6373056994818653,
+     "averageProbability": 0.7164247412105728,
+     "pricedBets": 0,
+     "priceHitRate": null,
+     "averageOdds": null,
+     "roi": null,
+     "roiInterval": null,
+     "closingLineValue": null,
+     "unseen": {
+      "bets": 57,
+      "hitRate": 0.6491228070175439,
+      "averageProbability": 0.7174321598981438,
+      "pricedBets": 0,
+      "priceHitRate": null,
+      "averageOdds": null,
+      "roi": null,
+      "roiInterval": null,
+      "closingLineValue": null
+     }
+    },
+    {
+     "from": 0.75,
+     "to": 1,
+     "bets": 19,
+     "hitRate": 0.631578947368421,
+     "averageProbability": 0.7690120332739894,
+     "pricedBets": 0,
+     "priceHitRate": null,
+     "averageOdds": null,
+     "roi": null,
+     "roiInterval": null,
+     "closingLineValue": null,
+     "unseen": {
+      "bets": 4,
+      "hitRate": 0.25,
+      "averageProbability": 0.7794685855978186,
+      "pricedBets": 0,
+      "priceHitRate": null,
+      "averageOdds": null,
+      "roi": null,
+      "roiInterval": null,
+      "closingLineValue": null
+     }
+    }
+   ]
+  },
+  "goals": {
+   "all": {
+    "bets": 34551,
+    "hitRate": 0.5570316343955313,
+    "averageProbability": 0.5812224784023371,
+    "pricedBets": 34479,
+    "priceHitRate": 0.5566576756866498,
+    "averageOdds": 1.7411145914905526,
+    "roi": -0.04499202413062944,
+    "roiInterval": {
+     "low": -0.05436874619333471,
+     "high": -0.036095884451404034
+    },
+    "closingLineValue": -0.04651125735366853
+   },
+   "unseen": {
+    "bets": 8731,
+    "hitRate": 0.5520558927957852,
+    "averageProbability": 0.574026192777776,
+    "pricedBets": 8719,
+    "priceHitRate": 0.5520128455098061,
+    "averageOdds": 1.747997476774858,
+    "roi": -0.048170661773139195,
+    "roiInterval": {
+     "low": -0.0658102993462549,
+     "high": -0.030141071223764398
+    },
+    "closingLineValue": -0.04931440986974281
+   },
+   "valueOnly": {
+    "bets": 12804,
+    "hitRate": 0.5087472664792252,
+    "averageProbability": 0.596016334398986,
+    "pricedBets": 12804,
+    "priceHitRate": 0.5087472664792252,
+    "averageOdds": 1.8676288659793716,
+    "roi": -0.06324117463292626,
+    "roiInterval": {
+     "low": -0.07932989690721604,
+     "high": -0.047831146516713025
+    },
+    "closingLineValue": -0.04183068513524781
+   },
+   "valueOnlyUnseen": {
+    "bets": 2901,
+    "hitRate": 0.5025853154084798,
+    "averageProbability": 0.5872177226321306,
+    "pricedBets": 2901,
+    "priceHitRate": 0.5025853154084798,
+    "averageOdds": 1.8883729748362554,
+    "roi": -0.06318166149603589,
+    "roiInterval": {
+     "low": -0.0980592899000347,
+     "high": -0.029607032057911126
+    },
+    "closingLineValue": -0.04391000746175681
+   },
+   "bands": [
+    {
+     "from": 0.5,
+     "to": 0.55,
+     "bets": 12887,
+     "hitRate": 0.519438193528362,
+     "averageProbability": 0.5247020409629665,
+     "pricedBets": 12865,
+     "priceHitRate": 0.5194714341235911,
+     "averageOdds": 1.8642246404974574,
+     "roi": -0.04197279440341944,
+     "roiInterval": {
+      "low": -0.05789739603575518,
+      "high": -0.02568363777691381
+     },
+     "closingLineValue": -0.04679354253398551,
+     "unseen": {
+      "bets": 3576,
+      "hitRate": 0.5167785234899329,
+      "averageProbability": 0.5243889872075479,
+      "pricedBets": 3571,
+      "priceHitRate": 0.5166619994399327,
+      "averageOdds": 1.8584934192102942,
+      "roi": -0.047558106972836904,
+      "roiInterval": {
+       "low": -0.07861103332399914,
+       "high": -0.016003920470456463
+      },
+      "closingLineValue": -0.04974280188185111
+     }
+    },
+    {
+     "from": 0.55,
+     "to": 0.6,
+     "bets": 10333,
+     "hitRate": 0.5525016936030195,
+     "averageProbability": 0.5736882049111655,
+     "pricedBets": 10313,
+     "priceHitRate": 0.5521186851546591,
+     "averageOdds": 1.751413749636386,
+     "roi": -0.041950935712207586,
+     "roiInterval": {
+      "low": -0.05752545331135381,
+      "high": -0.024245127508969656
+     },
+     "closingLineValue": -0.046742400363803234,
+     "unseen": {
+      "bets": 2684,
+      "hitRate": 0.5532786885245902,
+      "averageProbability": 0.5730910204655135,
+      "pricedBets": 2679,
+      "priceHitRate": 0.5531914893617021,
+      "averageOdds": 1.7482866741321377,
+      "roi": -0.04268383725270608,
+      "roiInterval": {
+       "low": -0.07541620007465483,
+       "high": -0.010507652108995869
+      },
+      "closingLineValue": -0.050155693487085394
+     }
+    },
+    {
+     "from": 0.6,
+     "to": 0.65,
+     "bets": 6615,
+     "hitRate": 0.5762660619803477,
+     "averageProbability": 0.6227981555849551,
+     "pricedBets": 6597,
+     "priceHitRate": 0.575564650598757,
+     "averageOdds": 1.6455616189176643,
+     "roi": -0.06170228891920613,
+     "roiInterval": {
+      "low": -0.08132332878581187,
+      "high": -0.04298620585114515
+     },
+     "closingLineValue": -0.045969541070554454,
+     "unseen": {
+      "bets": 1554,
+      "hitRate": 0.581081081081081,
+      "averageProbability": 0.6220440245535765,
+      "pricedBets": 1553,
+      "priceHitRate": 0.5814552479072762,
+      "averageOdds": 1.634977462974888,
+      "roi": -0.05857694784288482,
+      "roiInterval": {
+       "low": -0.09685125563425624,
+       "high": -0.019723116548615537
+      },
+      "closingLineValue": -0.048252382764892
+     }
+    },
+    {
+     "from": 0.65,
+     "to": 0.7,
+     "bets": 3101,
+     "hitRate": 0.6243147371815544,
+     "averageProbability": 0.6712841837459268,
+     "pricedBets": 3093,
+     "priceHitRate": 0.6233430326543808,
+     "averageOdds": 1.5563756870352399,
+     "roi": -0.0375202069188491,
+     "roiInterval": {
+      "low": -0.06339476236663452,
+      "high": -0.01134173941157484
+     },
+     "closingLineValue": -0.047481893460087125,
+     "unseen": {
+      "bets": 666,
+      "hitRate": 0.6096096096096096,
+      "averageProbability": 0.6698704331484832,
+      "pricedBets": 665,
+      "priceHitRate": 0.6090225563909775,
+      "averageOdds": 1.55135338345865,
+      "roi": -0.05867669172932347,
+      "roiInterval": {
+       "low": -0.11575939849624076,
+       "high": -0.0029172932330827025
+      },
+      "closingLineValue": -0.04754846127942903
+     }
+    },
+    {
+     "from": 0.7,
+     "to": 0.75,
+     "bets": 1180,
+     "hitRate": 0.6686440677966101,
+     "averageProbability": 0.7206903898801089,
+     "pricedBets": 1176,
+     "priceHitRate": 0.6675170068027211,
+     "averageOdds": 1.4697278911564613,
+     "roi": -0.026045918367346915,
+     "roiInterval": {
+      "low": -0.06502551020408183,
+      "high": 0.012678571428571426
+     },
+     "closingLineValue": -0.04339266159096235,
+     "unseen": {
+      "bets": 187,
+      "hitRate": 0.6737967914438503,
+      "averageProbability": 0.7208487988604098,
+      "pricedBets": 187,
+      "priceHitRate": 0.6737967914438503,
+      "averageOdds": 1.4309090909090927,
+      "roi": -0.04256684491978607,
+      "roiInterval": {
+       "low": -0.14203208556149732,
+       "high": 0.054064171122994636
+      },
+      "closingLineValue": -0.04359059356582169
+     }
+    },
+    {
+     "from": 0.75,
+     "to": 1,
+     "bets": 435,
+     "hitRate": 0.7034482758620689,
+     "averageProbability": 0.7820361264217115,
+     "pricedBets": 435,
+     "priceHitRate": 0.7034482758620689,
+     "averageOdds": 1.3523448275862087,
+     "roi": -0.05731034482758622,
+     "roiInterval": {
+      "low": -0.11689655172413811,
+      "high": 0.000781609195402322
+     },
+     "closingLineValue": -0.04242761770124586,
+     "unseen": {
+      "bets": 64,
+      "hitRate": 0.8125,
+      "averageProbability": 0.7944144365485837,
+      "pricedBets": 64,
+      "priceHitRate": 0.8125,
+      "averageOdds": 1.2828124999999995,
+      "roi": 0.033281249999999984,
+      "roiInterval": {
+       "low": -0.08906249999999999,
+       "high": 0.14296874999999998
+      },
+      "closingLineValue": -0.05104020469994308
+     }
+    }
+   ]
+  }
+ },
+ "blind": [
+  {
+   "name": "Always back the bookmaker favourite (1X2)",
+   "bets": 34480,
+   "hitRate": 0.5090487238979118,
+   "averageProbability": 0,
+   "pricedBets": 34480,
+   "priceHitRate": 0.5090487238979118,
+   "averageOdds": 1.973323665893366,
+   "roi": -0.043037703016240804,
+   "roiInterval": {
+    "low": -0.05297215777262123,
+    "high": -0.03272128770301584
+   },
+   "closingLineValue": null
+  },
+  {
+   "name": "Always back the home team",
+   "bets": 34480,
+   "hitRate": 0.43428074245939674,
+   "averageProbability": 0,
+   "pricedBets": 34480,
+   "priceHitRate": 0.43428074245939674,
+   "averageOdds": 2.5785087006961467,
+   "roi": -0.07361049883990702,
+   "roiInterval": {
+    "low": -0.08480655452436116,
+    "high": -0.06110179814385108
+   },
+   "closingLineValue": null
+  },
+  {
+   "name": "Always back the draw",
+   "bets": 34480,
+   "hitRate": 0.2607018561484919,
+   "averageProbability": 0,
+   "pricedBets": 34480,
+   "priceHitRate": 0.2607018561484919,
+   "averageOdds": 3.774270011601032,
+   "roi": -0.058090197215778024,
+   "roiInterval": {
+    "low": -0.07580945475638041,
+    "high": -0.04064269141531363
+   },
+   "closingLineValue": null
+  },
+  {
+   "name": "Always back Over 2.5",
+   "bets": 34479,
+   "hitRate": 0.510136604889933,
+   "averageProbability": 0,
+   "pricedBets": 34479,
+   "priceHitRate": 0.510136604889933,
+   "averageOdds": 1.929083790133258,
+   "roi": -0.04305490298442479,
+   "roiInterval": {
+    "low": -0.053258215145450934,
+    "high": -0.03226369674294406
+   },
+   "closingLineValue": null
+  },
+  {
+   "name": "Always back Under 2.5",
+   "bets": 34479,
+   "hitRate": 0.489863395110067,
+   "averageProbability": 0,
+   "pricedBets": 34479,
+   "priceHitRate": 0.489863395110067,
+   "averageOdds": 1.9776104295367738,
+   "roi": -0.06523768090721829,
+   "roiInterval": {
+    "low": -0.07649380782505277,
+    "high": -0.0545233330433015
+   },
+   "closingLineValue": null
+  },
+  {
+   "name": "Always back BTTS Yes (no odds in the free data)",
+   "bets": 34551,
+   "hitRate": 0.5271048594830829,
+   "averageProbability": 0,
+   "pricedBets": 0,
+   "priceHitRate": null,
+   "averageOdds": null,
+   "roi": null,
+   "roiInterval": null,
+   "closingLineValue": null
+  }
+ ],
+ "combinations": {
+  "trebleAll": {
+   "matches": 34551,
+   "hitRate": 0.19385835431680704,
+   "modelAverage": 0.16023985322054785
+  },
+  "trebleStrong": {
+   "matches": 769,
+   "hitRate": 0.3576072821846554
+  },
+  "homeBttsOver": {
+   "label": "Home win + BTTS Yes + Over 2.5",
+   "hitRate": 0.1951897195450204
+  },
+  "awayBttsOver": {
+   "label": "Away win + BTTS Yes + Over 2.5",
+   "hitRate": 0.14349801742351886
+  },
+  "bttsAndOver": {
+   "label": "BTTS Yes + Over 2.5",
+   "hitRate": 0.40566119649214205
+  },
+  "bttsYesGivenOver": {
+   "label": "BTTS Yes when there were 3+ goals",
+   "hitRate": 0.7944227172249617
+  }
+ }
+}

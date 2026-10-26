@@ -2,37 +2,20 @@
 // Usage: node tools/predict-league.mjs <leagueCode> <outDir>   (server.js must be running for the CSV proxy)
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { parseCsv } from '../js/util/csv.js';
-import { toMatchRecord } from '../js/data/matchRecord.js';
-import { DEFAULT_SETTINGS, seasonCodes } from '../js/config.js';
+import { DEFAULT_SETTINGS } from '../js/config.js';
 import { walkForwardPredictions } from '../js/model/backtest.js';
 import { ScoreMatrix } from '../js/model/scoreMatrix.js';
 import { asianHandicapSettlement, removeMargin } from '../js/model/value.js';
+import { loadLeagueSeasons } from './historyLoader.mjs';
 
-const PROXY = process.env.PROXY || 'http://127.0.0.1:5350/api/fd';
 const SEASONS = Number(process.env.SEASONS || 6);
 const [leagueCode, outDir] = process.argv.slice(2);
 
-const matches = await loadMatches(leagueCode);
+const matches = await loadLeagueSeasons(leagueCode, SEASONS);
 const predictions = await walkForwardPredictions(matches, DEFAULT_SETTINGS);
 const candidates = predictions.flatMap(betCandidates);
 await fs.writeFile(path.join(outDir, `${leagueCode}.json`), JSON.stringify(candidates));
 console.log(`${leagueCode}: ${matches.length} matches, ${predictions.length} predicted, ${candidates.length} priced candidates`);
-
-async function loadMatches(code) {
-  const seasons = await Promise.all(seasonCodes(new Date(), SEASONS).map((season) => loadSeason(code, season)));
-  return seasons.flat().sort((a, b) => a.kickoff - b.kickoff);
-}
-
-async function loadSeason(code, season) {
-  const response = await fetch(`${PROXY}/mmz4281/${season}/${code}.csv`);
-  if (!response.ok) return [];
-  return parseCsv(await response.text())
-    .filter((row) => row.Div && row.HomeTeam && row.AwayTeam && row.Date)
-    .flatMap((row) => {
-      try { return [{ ...toMatchRecord(row), season }]; } catch { return []; }
-    });
-}
 
 function betCandidates(prediction) {
   const { match, probabilities: p } = prediction;

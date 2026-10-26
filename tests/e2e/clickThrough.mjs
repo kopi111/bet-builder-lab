@@ -80,6 +80,12 @@ await page.getByText(/teams with league matches/).waitFor({ timeout: 30000 });
 await page.getByRole('button', { name: 'Analyse match-up' }).click();
 await page.getByRole('heading', { name: '12 · Final assessment' }).waitFor({ timeout: 60000 });
 
+step('1X2 · BTTS · O2.5 picks and evidence');
+await page.goto(`${BASE}/#/three`);
+await page.waitForSelector('.three-list', { timeout: 120000 });
+await page.click('.research-toggle > summary');
+await page.waitForFunction(() => document.querySelectorAll('.data-table').length >= 3, null, { timeout: 30000 });
+
 step('backtest');
 await page.goto(`${BASE}/#/backtest`);
 await page.getByRole('button', { name: 'Run walk-forward backtest' }).click();
@@ -101,7 +107,7 @@ await page.getByRole('heading', { name: 'Data-source status' }).waitFor();
 
 step('mobile 400px, every page');
 await page.setViewportSize({ width: 400, height: 860 });
-for (const route of ['fixtures', 'match', 'builder', 'saved', 'backtest', 'settings', 'sources']) {
+for (const route of ['fixtures', 'three', 'match', 'builder', 'saved', 'backtest', 'settings', 'sources']) {
   await page.goto(`${BASE}/#/${route}`);
   await page.waitForTimeout(route === 'match' || route === 'builder' ? 3000 : 1200);
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);

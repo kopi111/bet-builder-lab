@@ -2,6 +2,7 @@ import { renderFixtures } from './js/ui/fixturesView.js';
 import { renderMatch } from './js/ui/matchView.js';
 import { renderBuilder } from './js/ui/builderView.js';
 import { renderSaved } from './js/ui/savedView.js';
+import { renderThreeMarkets } from './js/ui/threeMarketsView.js';
 import { renderBacktest } from './js/ui/backtestView.js';
 import { renderSettings } from './js/ui/settingsView.js';
 import { renderSources } from './js/ui/sourcesView.js';
@@ -12,6 +13,7 @@ import { draftSlip } from './js/store/appState.js';
 const ROUTES = {
   fixtures: { title: 'Fixtures', render: renderFixtures },
   match: { title: 'Match report', render: renderMatch },
+  three: { title: '1X2 · BTTS · Over 2.5', render: renderThreeMarkets },
   builder: { title: 'Bet Builder', render: renderBuilder },
   saved: { title: 'Saved & tracking', render: renderSaved },
   backtest: { title: 'Backtest', render: renderBacktest },

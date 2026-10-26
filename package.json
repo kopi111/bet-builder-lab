@@ -6,7 +6,7 @@
   "description": "Football match analysis and Bet Builder research tool (simulation only).",
   "scripts": {
     "start": "node server.js",
-    "test": "node --test tests/model.test.js tests/data.test.js",
+    "test": "node --test tests/model.test.js tests/data.test.js tests/threeMarkets.test.js",
     "test:e2e": "node tests/e2e/clickThrough.mjs"
   }
 }

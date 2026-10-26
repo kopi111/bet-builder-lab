@@ -274,3 +274,16 @@ progress { width: 100%; height: 10px; accent-color: var(--accent); }
   .filter-controls > * { flex: 1 1 100%; }
   .odds-cell .mono { font-size: 0.8rem; }
 }
+
+/* 1X2 · BTTS · O2.5 page */
+.three-list { display: flex; flex-direction: column; gap: 12px; }
+.three-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.three-card header, .three-card footer { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; align-items: baseline; }
+.three-picks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.pick-cell { background: var(--raised); border-radius: 8px; padding: 10px; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; min-width: 0; }
+.pick-cell .badge { white-space: normal; }
+.check-label { display: inline-flex; gap: 6px; align-items: center; font-size: 0.85rem; }
+@media (max-width: 720px) { .three-picks { grid-template-columns: 1fr; } }
+.research-toggle { margin-top: 8px; }
+.research-toggle > summary { cursor: pointer; color: var(--muted); font-size: 0.85rem; padding: 8px 0; }
+.research-toggle[open] > summary { margin-bottom: 12px; }
