@@ -107,7 +107,7 @@ async function proxyOpenFootball(url, response) {
 
 async function proxyEspn(url, response) {
   const day = url.pathname.match(ESPN_PATH)[1];
-  const cached = await fetchWithCache(`${ESPN_SCOREBOARD}?dates=${day}`, {}, HOUR);
+  const cached = await fetchWithCache(`${ESPN_SCOREBOARD}?dates=${day}&limit=500`, {}, HOUR);
   sendCached(response, cached, 'application/json; charset=utf-8');
 }
 

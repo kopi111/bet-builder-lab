@@ -29,7 +29,7 @@ async function writeDataSnapshot() {
     ['api/fd/fixtures.csv', `${FOOTBALL_DATA}/fixtures.csv`],
     ...LEAGUES.filter((league) => !league.pooled).flatMap((league) => seasonCodes().map((season) =>
       [`api/fd/mmz4281/${season}/${league.code}.csv`, `${FOOTBALL_DATA}/mmz4281/${season}/${league.code}.csv`])),
-    ...espnDays().map((day) => [`api/espn/scoreboard/${day}.json`, `${ESPN_SCOREBOARD}?dates=${day}`]),
+    ...espnDays().map((day) => [`api/espn/scoreboard/${day}.json`, `${ESPN_SCOREBOARD}?dates=${day}&limit=500`]),
     ...CHAMPIONS_LEAGUE.pastSeasonFiles.map((season) => [`api/of/${season}/uefa.cl.json`, `${OPENFOOTBALL}/${season}/uefa.cl.json`])
   ];
   const failures = [];
