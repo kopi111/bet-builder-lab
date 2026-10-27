@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bet-builder-lab
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
