@@ -59,7 +59,7 @@ function filterBar(feed, redraw) {
   });
   const daySelect = h('select', { 'aria-label': 'Day' },
     h('option', { value: 'today', selected: filters.day === 'today' }, 'Today'),
-    [...new Set(feed.fixtures.map((f) => localDateKey(f.kickoff)))].sort().map((day) =>
+    [...new Set(feed.fixtures.filter(notStarted).map((f) => localDateKey(f.kickoff)))].sort().map((day) =>
       h('option', { value: day, selected: filters.day === day }, dayHeading(new Date(`${day}T12:00:00`)))),
     h('option', { value: 'all', selected: filters.day === 'all' }, 'All days this week'));
   daySelect.addEventListener('change', () => {
@@ -91,7 +91,9 @@ async function drawFixtureList(container, feed) {
   if (filters.mode === 'results') return drawResults(container);
   const fixtures = feed.fixtures.filter(matchesFilters);
   if (fixtures.length === 0) {
-    const message = filters.day === 'today' ? 'No fixtures left in the feed for today. Pick another day above, or "All days this week".' : 'The free feed lists the current week only. New fixtures usually appear mid-week. Use the custom match-up below, or switch to recent results.';
+    const message = feed.fixtures.some(notStarted)
+      ? 'No upcoming fixtures for this day or competition. Pick another day above, or "All days this week".'
+      : 'Every match in the free feed has already been played. New fixtures usually appear mid-week. Switch to recent results to see how the finished matches went.';
     replaceContent(container, emptyState('No fixtures match', message));
     return;
   }
@@ -105,9 +107,13 @@ async function drawFixtureList(container, feed) {
 
 function matchesFilters(fixture) {
   if (filters.league !== 'all' && fixture.league !== filters.league) return false;
-  if (filters.mode === 'upcoming' && !onChosenDay(fixture)) return false;
+  if (filters.mode === 'upcoming' && (!notStarted(fixture) || !onChosenDay(fixture))) return false;
   if (!filters.search) return true;
   return fixture.home.toLowerCase().includes(filters.search) || fixture.away.toLowerCase().includes(filters.search);
+}
+
+function notStarted(fixture) {
+  return fixture.kickoff > new Date();
 }
 
 function onChosenDay(fixture) {
