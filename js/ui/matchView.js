@@ -42,7 +42,7 @@ function reportHeader(analysis) {
 }
 
 const LEAGUE_SCOPE = { matches: 'league matches', caveat: 'Cup and European matches are not in the data, so congestion may be understated.' };
-const POOLED_SCOPE = { matches: 'league and Champions League matches', caveat: 'Domestic cup matches are not in the data, so congestion may be understated.' };
+const POOLED_SCOPE = { matches: 'league matches (plus European results for the Champions League)', caveat: 'Cup matches are not in the data, so congestion may be understated.' };
 
 function matchScope(fixture) {
   return leagueByCode(fixture.league).pooled ? POOLED_SCOPE : LEAGUE_SCOPE;

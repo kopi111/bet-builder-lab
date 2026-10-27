@@ -20,8 +20,13 @@ export const LEAGUES = [
   { code: 'SC1', name: 'Championship', country: 'Scotland', apiFootballId: 180, espnId: 3940 },
   { code: 'SC2', name: 'League One', country: 'Scotland', apiFootballId: 183, espnId: 3941 },
   { code: 'SC3', name: 'League Two', country: 'Scotland', apiFootballId: 184, espnId: 3942 },
-  { code: 'CL', name: 'Champions League', country: 'Europe', apiFootballId: 2, pooled: true }
+  { code: 'CL', name: 'Champions League', country: 'Europe', apiFootballId: 2, pooled: true,
+    poolNote: 'Champions League ratings pool the covered top divisions with European results. How strong each league is comes only from the European matches in the data, so cross-league estimates are rough.' },
+  { code: 'ECUP', name: 'Carabao Cup & FA Cup', country: 'England', pooled: true, members: ['E0', 'E1', 'E2', 'E3'], espnIds: [3920, 3918],
+    poolNote: 'Cup ratings pool the four English divisions. The gap between divisions is learned only from clubs that moved up or down between seasons, so estimates across divisions are rough, and cup rotation (weakened line-ups) is not known to the model.' }
 ];
+
+export const ENGLISH_CUPS = LEAGUES.find((league) => league.code === 'ECUP');
 
 export const CHAMPIONS_LEAGUE = Object.freeze({
   code: 'CL',

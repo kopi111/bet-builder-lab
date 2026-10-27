@@ -1,7 +1,6 @@
 // Upcoming league fixtures from ESPN's free scoreboard, used when football-data.co.uk has not yet published the week.
 // ESPN carries no bookmaker prices, so these fixtures have model numbers only.
 import { LEAGUES } from '../config.js';
-import { loadLeagueHistory } from './footballData.js';
 import { fetchJson } from './httpClient.js';
 import { matchId, ODDS_FIELDS, STAT_FIELDS } from './matchRecord.js';
 import { recordSourceFailure, recordSourceSuccess } from './sourceStatus.js';
@@ -10,14 +9,14 @@ import { TeamNameMatcher } from './teamNameMatcher.js';
 const SOURCE = 'ESPN';
 const DAYS_AHEAD = 7;
 const DAY_MS = 86400000;
-const LEAGUE_BY_ESPN_ID = new Map(LEAGUES.filter((league) => league.espnId).map((league) => [String(league.espnId), league.code]));
+const LEAGUE_BY_ESPN_ID = new Map(LEAGUES.flatMap((league) => [league.espnId, ...(league.espnIds || [])].filter(Boolean).map((id) => [String(id), league.code])));
 
-export async function loadEspnFixtures() {
+export async function loadEspnFixtures(loadLeagueHistory) {
   const key = `${SOURCE} fixtures (next ${DAYS_AHEAD} days)`;
   try {
     const events = (await Promise.all(upcomingDays().map(fetchDay))).flat();
     const upcoming = events.filter((event) => event.league && event.state === 'pre');
-    const matcher = await matcherFor(new Set(upcoming.map((event) => event.league)));
+    const matcher = await matcherFor(new Set(upcoming.map((event) => event.league)), loadLeagueHistory);
     const fixtures = upcoming.map((event) => toFixture(event, matcher)).filter(Boolean);
     recordSourceSuccess(key, { rows: fixtures.length, fetchedAt: new Date() });
     return fixtures;
@@ -49,7 +48,7 @@ function readEvent(event) {
   };
 }
 
-async function matcherFor(leagueCodes) {
+async function matcherFor(leagueCodes, loadLeagueHistory) {
   const teamsByLeague = new Map();
   await Promise.all([...leagueCodes].map(async (code) => {
     const history = await loadLeagueHistory(code);

@@ -84,7 +84,7 @@ function weaknessesOf(analysis) {
   if (model.league.goals.blend === 0) weaknesses.push('Shots on target are missing for this league, so goals alone drive the ratings.');
   if (!model.league.halfShare.measured) weaknesses.push('No half-time scores in the data: first-half markets use a default 45% share.');
   if (model.playerContext.players.length === 0) weaknesses.push('No player data: line-ups, injuries and suspensions are unchecked, and player markets are unavailable.');
-  if (pooled) weaknesses.push('There are no historical Champions League odds in the free data, so this competition cannot be back-tested.');
+  if (pooled) weaknesses.push(`There are no historical ${leagueByCode(analysis.fixture.league).name} odds in the free data, so this competition cannot be back-tested.`);
   else if (!analysis.backtestSummary) weaknesses.push('This league has not been back-tested in this browser yet: run the Backtest page to see how well-calibrated the model has been.');
   else if (!(analysis.backtestSummary.roi > 0)) weaknesses.push(`The last walk-forward backtest for this league showed ROI ${(analysis.backtestSummary.roi * 100).toFixed(1)}% over ${analysis.backtestSummary.bets} simulated bets: no proven edge.`);
   weaknesses.push('Team strength comes from results in the loaded league seasons only; it does not know about squad changes or why results happened.');
@@ -93,7 +93,7 @@ function weaknessesOf(analysis) {
 
 function pooledWeaknesses(analysis) {
   const { homeLeague, awayLeague } = analysis.fixture;
-  const notes = ['Champions League ratings pool the covered top divisions with European results. How strong each league is comes only from the European matches in the data, so cross-league estimates are rough.'];
+  const notes = [leagueByCode(analysis.fixture.league).poolNote];
   if (homeLeague && awayLeague && homeLeague !== awayLeague) notes.push('Corners, cards, shots and fouls are rated within each domestic league and are not adjusted for league strength, so treat those markets as rough for clubs from different leagues.');
   return notes;
 }
