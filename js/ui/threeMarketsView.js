@@ -161,9 +161,7 @@ function bestPrice(pick) {
 
 function bestBetsPanel(rows, study, staking) {
   const legs = bestBetLegs(rows, study, staking);
-  if (!legs.length) {
-    return section('Best bets this week', '', emptyState('No strong priced picks right now', 'Strong picks with a bookmaker price appear when the weekend fixtures are published (usually mid-week).'));
-  }
+  if (!legs.length) return '';
   const tickets = [];
   for (let i = 0; i + TICKET_SIZE <= legs.length; i += TICKET_SIZE) tickets.push(legs.slice(i, i + TICKET_SIZE));
   return section('Best bets this week', `Strong picks only (the kind that historically won ${percent(STRONG_HIT_RATE, 0)}+), one per match, good leagues first, weak leagues left out. $${STAKE} per bet; "pays" is the total back at the best price.`,
@@ -195,10 +193,7 @@ function todaysPicksPanel(rows, study, staking) {
   const day = nextMatchDay(rows);
   const legs = day ? bestBetLegs(rows.filter((row) => localDateKey(row.fixture.kickoff) === day), study, staking) : [];
   const heading = day === localDateKey(new Date()) ? 'Today\'s picks' : `Next match day's picks (${day ? new Date(`${day}T12:00:00`).toDateString() : 'none'})`;
-  if (!legs.length) {
-    return section(heading, 'Written from the model and the five-season study.',
-      emptyState('No ticket today', 'None of the remaining matches has a strong pick with a price in a league where strong picks have held up. Not betting is the pick.'));
-  }
+  if (!legs.length) return '';
   const tickets = writeTickets(legs);
   return section(heading, `Written from the model and the five-season study: strong picks only (historically won ${percent(STRONG_HIT_RATE, 0)}+), one per match, weak leagues left out, best price. $${STAKE} per ticket.`,
     tickets.map((ticket, index) => writtenTicket(ticket, index + 1, staking)),
