@@ -35,7 +35,7 @@ async function fetchLeagueHistory(leagueCode) {
 async function fetchSeason(leagueCode, season) {
   const key = `${SOURCE} ${leagueCode} ${season}`;
   try {
-    const download = await fetchText(`/api/fd/mmz4281/${season}/${leagueCode}.csv`, SOURCE);
+    const download = await fetchText(`api/fd/mmz4281/${season}/${leagueCode}.csv`, SOURCE);
     const matches = parseRecords(download.text);
     recordSourceSuccess(key, { rows: matches.length, fetchedAt: download.fetchedAt, stale: download.staleReason });
     return { season, loaded: true, matches, rows: matches.length, fetchedAt: download.fetchedAt, error: '' };
@@ -53,7 +53,7 @@ export function loadFixtures() {
 async function fetchFixtures() {
   const key = `${SOURCE} fixtures`;
   try {
-    const download = await fetchText('/api/fd/fixtures.csv', SOURCE);
+    const download = await fetchText('api/fd/fixtures.csv', SOURCE);
     // The feed sometimes lists competitions the model has no history for (e.g. EC, the National League); skip them.
     const fixtures = parseRecords(download.text).filter((fixture) => KNOWN_LEAGUES.has(fixture.league)).sort((a, b) => a.kickoff - b.kickoff);
     recordSourceSuccess(key, { rows: fixtures.length, fetchedAt: download.fetchedAt, stale: download.staleReason });

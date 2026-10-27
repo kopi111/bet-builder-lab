@@ -16,7 +16,7 @@ const API_FOOTBALL_ORIGIN = 'https://v3.football.api-sports.io';
 const FOOTBALL_DATA_ORG_ORIGIN = 'https://api.football-data.org/v4';
 const OPENFOOTBALL_ORIGIN = 'https://raw.githubusercontent.com/openfootball/football.json/master';
 const ESPN_SCOREBOARD = 'https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard';
-const ESPN_QUERY = /^\?dates=\d{8}$/;
+const ESPN_PATH = /^\/api\/espn\/scoreboard\/(\d{8})\.json$/;
 const OPENFOOTBALL_PATH = /^\/\d{4}-\d{2}\/uefa\.cl\.json$/;
 const FOOTBALL_DATA_ORG_ENDPOINTS = new Set(['competitions/CL/matches', 'competitions/CL/teams']);
 const FOOTBALL_DATA_ORG_QUERY = /^(\?season=\d{4})?$/;
@@ -55,7 +55,7 @@ async function routeRequest(request, response) {
     if (url.pathname.startsWith('/api/af/')) return await proxyApiFootball(url, response);
     if (url.pathname.startsWith('/api/fdorg/')) return await proxyFootballDataOrg(url, response);
     if (url.pathname.startsWith('/api/of/')) return await proxyOpenFootball(url, response);
-    if (url.pathname === '/api/espn/scoreboard') return await proxyEspn(url, response);
+    if (ESPN_PATH.test(url.pathname)) return await proxyEspn(url, response);
     return await serveStatic(url.pathname, response);
   } catch (error) {
     console.error(`${request.method} ${url.pathname}: ${error.message}`);
@@ -106,8 +106,8 @@ async function proxyOpenFootball(url, response) {
 }
 
 async function proxyEspn(url, response) {
-  if (!ESPN_QUERY.test(url.search)) return sendJson(response, 400, { error: 'Query not allowed' });
-  const cached = await fetchWithCache(ESPN_SCOREBOARD + url.search, {}, HOUR);
+  const day = url.pathname.match(ESPN_PATH)[1];
+  const cached = await fetchWithCache(`${ESPN_SCOREBOARD}?dates=${day}`, {}, HOUR);
   sendCached(response, cached, 'application/json; charset=utf-8');
 }
 

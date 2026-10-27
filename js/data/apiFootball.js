@@ -119,7 +119,7 @@ async function apiGet(path) {
 }
 
 function apiGetPage(path) {
-  return fetchJson(`/api/af/${path}`, SOURCE);
+  return fetchJson(`api/af/${path}`, SOURCE);
 }
 
 function sameTeam(apiName, sourceName) {

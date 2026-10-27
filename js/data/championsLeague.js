@@ -70,7 +70,7 @@ async function loadOpenFootball(matcher) {
 async function fetchOpenFootballSeason(season, matcher) {
   const key = `${OPENFOOTBALL} Champions League ${season}`;
   try {
-    const matches = openFootballRecords(await fetchJson(`/api/of/${season}/uefa.cl.json`, OPENFOOTBALL), matcher);
+    const matches = openFootballRecords(await fetchJson(`api/of/${season}/uefa.cl.json`, OPENFOOTBALL), matcher);
     recordSourceSuccess(key, { rows: matches.length, fetchedAt: new Date() });
     return matches;
   } catch (error) {
@@ -109,8 +109,8 @@ async function fetchFootballDataOrgSeason(season, matcher) {
   const key = `${FOOTBALL_DATA_ORG} Champions League ${season || 'current'}`;
   try {
     const [teams, data] = await Promise.all([
-      fetchJson(`/api/fdorg/competitions/CL/teams${query}`, FOOTBALL_DATA_ORG),
-      fetchJson(`/api/fdorg/competitions/CL/matches${query}`, FOOTBALL_DATA_ORG)
+      fetchJson(`api/fdorg/competitions/CL/teams${query}`, FOOTBALL_DATA_ORG),
+      fetchJson(`api/fdorg/competitions/CL/matches${query}`, FOOTBALL_DATA_ORG)
     ]);
     const countries = new Map(teams.teams.map((team) => [team.id, team.area?.code || '']));
     const club = (team) => matcher.match(team.name, countries.get(team.id));

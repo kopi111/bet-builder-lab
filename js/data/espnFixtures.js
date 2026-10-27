@@ -33,7 +33,7 @@ function upcomingDays() {
 }
 
 async function fetchDay(day) {
-  const data = await fetchJson(`/api/espn/scoreboard?dates=${day}`, SOURCE);
+  const data = await fetchJson(`api/espn/scoreboard/${day}.json`, SOURCE);
   return (data.events || []).map(readEvent);
 }
 
