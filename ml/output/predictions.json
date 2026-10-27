@@ -1,0 +1,5413 @@
+{
+ "trained_at": "2026-10-19T23:45:00+00:00",
+ "fixtures": [
+  {
+   "league": "E2",
+   "date": "2026-10-15",
+   "time": "20:00",
+   "home": "Mansfield",
+   "away": "Oxford",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3879,
+     0.2973,
+     0.3148
+    ],
+    "over25": 0.5137
+   },
+   "stats_market": {
+    "result": [
+     0.4525,
+     0.268,
+     0.2794
+    ],
+    "over25": 0.5684
+   },
+   "bookmaker": {
+    "result": [
+     0.4063,
+     0.2612,
+     0.3325
+    ],
+    "over25": 0.5395
+   }
+  },
+  {
+   "league": "D1",
+   "date": "2026-10-16",
+   "time": "19:30",
+   "home": "Ein Frankfurt",
+   "away": "FC Koln",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4338,
+     0.2867,
+     0.2795
+    ],
+    "over25": 0.6223
+   },
+   "stats_market": {
+    "result": [
+     0.4894,
+     0.234,
+     0.2766
+    ],
+    "over25": 0.674
+   },
+   "bookmaker": {
+    "result": [
+     0.5117,
+     0.2254,
+     0.2629
+    ],
+    "over25": 0.7188
+   }
+  },
+  {
+   "league": "D2",
+   "date": "2026-10-16",
+   "time": "17:30",
+   "home": "Cottbus",
+   "away": "Nurnberg",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2906,
+     0.2904,
+     0.4189
+    ],
+    "over25": 0.6375
+   },
+   "stats_market": {
+    "result": [
+     0.2785,
+     0.2361,
+     0.4854
+    ],
+    "over25": 0.6611
+   },
+   "bookmaker": {
+    "result": [
+     0.2579,
+     0.2264,
+     0.5157
+    ],
+    "over25": 0.7188
+   }
+  },
+  {
+   "league": "D2",
+   "date": "2026-10-16",
+   "time": "17:30",
+   "home": "Holstein Kiel",
+   "away": "Hertha",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2862,
+     0.3214,
+     0.3925
+    ],
+    "over25": 0.5964
+   },
+   "stats_market": {
+    "result": [
+     0.3484,
+     0.2612,
+     0.3905
+    ],
+    "over25": 0.6476
+   },
+   "bookmaker": {
+    "result": [
+     0.32,
+     0.238,
+     0.442
+    ],
+    "over25": 0.6729
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-16",
+   "time": "20:00",
+   "home": "Burnley",
+   "away": "Wolves",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4515,
+     0.2594,
+     0.2891
+    ],
+    "over25": 0.5114
+   },
+   "stats_market": {
+    "result": [
+     0.3192,
+     0.2601,
+     0.4206
+    ],
+    "over25": 0.5115
+   },
+   "bookmaker": {
+    "result": [
+     0.2939,
+     0.2687,
+     0.4374
+    ],
+    "over25": 0.5259
+   }
+  },
+  {
+   "league": "F1",
+   "date": "2026-10-16",
+   "time": "19:45",
+   "home": "Le Mans",
+   "away": "Toulouse",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3504,
+     0.3099,
+     0.3397
+    ],
+    "over25": 0.5487
+   },
+   "stats_market": {
+    "result": [
+     0.3203,
+     0.2721,
+     0.4076
+    ],
+    "over25": 0.6386
+   },
+   "bookmaker": {
+    "result": [
+     0.3163,
+     0.2711,
+     0.4126
+    ],
+    "over25": 0.5685
+   }
+  },
+  {
+   "league": "F2",
+   "date": "2026-10-16",
+   "time": "19:00",
+   "home": "Annecy",
+   "away": "Nancy",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5132,
+     0.275,
+     0.2117
+    ],
+    "over25": 0.4358
+   },
+   "stats_market": {
+    "result": [
+     0.3326,
+     0.2863,
+     0.3812
+    ],
+    "over25": 0.4909
+   },
+   "bookmaker": {
+    "result": [
+     0.3072,
+     0.2969,
+     0.3959
+    ],
+    "over25": 0.4737
+   }
+  },
+  {
+   "league": "F2",
+   "date": "2026-10-16",
+   "time": "19:00",
+   "home": "Grenoble",
+   "away": "Boulogne",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3892,
+     0.3039,
+     0.3069
+    ],
+    "over25": 0.3978
+   },
+   "stats_market": {
+    "result": [
+     0.3343,
+     0.3446,
+     0.3211
+    ],
+    "over25": 0.3955
+   },
+   "bookmaker": {
+    "result": [
+     0.3308,
+     0.319,
+     0.3502
+    ],
+    "over25": 0.3627
+   }
+  },
+  {
+   "league": "F2",
+   "date": "2026-10-16",
+   "time": "19:00",
+   "home": "Guingamp",
+   "away": "Pau FC",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3531,
+     0.322,
+     0.3249
+    ],
+    "over25": 0.4419
+   },
+   "stats_market": {
+    "result": [
+     0.4337,
+     0.2911,
+     0.2752
+    ],
+    "over25": 0.5143
+   },
+   "bookmaker": {
+    "result": [
+     0.4247,
+     0.2877,
+     0.2877
+    ],
+    "over25": 0.5132
+   }
+  },
+  {
+   "league": "F2",
+   "date": "2026-10-16",
+   "time": "19:00",
+   "home": "Laval",
+   "away": "Clermont",
+   "established": true,
+   "stats": {
+    "result": [
+     0.438,
+     0.2741,
+     0.288
+    ],
+    "over25": 0.4406
+   },
+   "stats_market": {
+    "result": [
+     0.445,
+     0.2843,
+     0.2707
+    ],
+    "over25": 0.4832
+   },
+   "bookmaker": {
+    "result": [
+     0.4374,
+     0.2989,
+     0.2637
+    ],
+    "over25": 0.4605
+   }
+  },
+  {
+   "league": "F2",
+   "date": "2026-10-16",
+   "time": "19:00",
+   "home": "Reims",
+   "away": "Dijon",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4736,
+     0.2716,
+     0.2548
+    ],
+    "over25": 0.5002
+   },
+   "stats_market": {
+    "result": [
+     0.5936,
+     0.2257,
+     0.1807
+    ],
+    "over25": 0.5887
+   },
+   "bookmaker": {
+    "result": [
+     0.5411,
+     0.2582,
+     0.2008
+    ],
+    "over25": 0.5628
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-16",
+   "time": "19:45",
+   "home": "Frosinone",
+   "away": "Sassuolo",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4605,
+     0.2952,
+     0.2443
+    ],
+    "over25": 0.5422
+   },
+   "stats_market": {
+    "result": [
+     0.3905,
+     0.2703,
+     0.3393
+    ],
+    "over25": 0.627
+   },
+   "bookmaker": {
+    "result": [
+     0.4122,
+     0.2431,
+     0.3447
+    ],
+    "over25": 0.6818
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-16",
+   "time": "19:30",
+   "home": "Verona",
+   "away": "Catanzaro",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5025,
+     0.2922,
+     0.2053
+    ],
+    "over25": 0.5052
+   },
+   "stats_market": {
+    "result": [
+     0.588,
+     0.2345,
+     0.1774
+    ],
+    "over25": 0.5464
+   },
+   "bookmaker": {
+    "result": [
+     0.5383,
+     0.2429,
+     0.2188
+    ],
+    "over25": 0.5459
+   }
+  },
+  {
+   "league": "N1",
+   "date": "2026-10-16",
+   "time": "19:00",
+   "home": "Heerenveen",
+   "away": "Excelsior",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5512,
+     0.2635,
+     0.1853
+    ],
+    "over25": 0.6177
+   },
+   "stats_market": {
+    "result": [
+     0.6262,
+     0.2026,
+     0.1712
+    ],
+    "over25": 0.6559
+   },
+   "bookmaker": {
+    "result": [
+     0.618,
+     0.2101,
+     0.1719
+    ],
+    "over25": 0.6729
+   }
+  },
+  {
+   "league": "SC1",
+   "date": "2026-10-16",
+   "time": "19:30",
+   "home": "Ayr",
+   "away": "Partick",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2506,
+     0.2397,
+     0.5098
+    ],
+    "over25": 0.4396
+   },
+   "stats_market": {
+    "result": [
+     0.2287,
+     0.2391,
+     0.5322
+    ],
+    "over25": 0.5975
+   },
+   "bookmaker": {
+    "result": [
+     0.2136,
+     0.2425,
+     0.5438
+    ],
+    "over25": 0.5526
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-16",
+   "time": "20:00",
+   "home": "La Coruna",
+   "away": "Levante",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4802,
+     0.2873,
+     0.2325
+    ],
+    "over25": 0.5404
+   },
+   "stats_market": {
+    "result": [
+     0.469,
+     0.2947,
+     0.2362
+    ],
+    "over25": 0.5149
+   },
+   "bookmaker": {
+    "result": [
+     0.464,
+     0.2718,
+     0.2642
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-16",
+   "time": "19:30",
+   "home": "Leganes",
+   "away": "Cordoba",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3413,
+     0.3002,
+     0.3585
+    ],
+    "over25": 0.4691
+   },
+   "stats_market": {
+    "result": [
+     0.3455,
+     0.2752,
+     0.3793
+    ],
+    "over25": 0.5821
+   },
+   "bookmaker": {
+    "result": [
+     0.381,
+     0.2667,
+     0.3523
+    ],
+    "over25": 0.5714
+   }
+  },
+  {
+   "league": "T1",
+   "date": "2026-10-16",
+   "time": "18:00",
+   "home": "Corum",
+   "away": "Rizespor",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4321,
+     0.282,
+     0.2859
+    ],
+    "over25": 0.5494
+   },
+   "stats_market": {
+    "result": [
+     0.4832,
+     0.2628,
+     0.254
+    ],
+    "over25": 0.5812
+   },
+   "bookmaker": {
+    "result": [
+     0.4623,
+     0.2589,
+     0.2788
+    ],
+    "over25": 0.5714
+   }
+  },
+  {
+   "league": "D1",
+   "date": "2026-10-17",
+   "time": "14:30",
+   "home": "Elversberg",
+   "away": "Augsburg",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3741,
+     0.2976,
+     0.3283
+    ],
+    "over25": 0.6127
+   },
+   "stats_market": {
+    "result": [
+     0.3588,
+     0.2754,
+     0.3658
+    ],
+    "over25": 0.599
+   },
+   "bookmaker": {
+    "result": [
+     0.3805,
+     0.2537,
+     0.3659
+    ],
+    "over25": 0.6563
+   }
+  },
+  {
+   "league": "D1",
+   "date": "2026-10-17",
+   "time": "14:30",
+   "home": "Hamburg",
+   "away": "Stuttgart",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2384,
+     0.2608,
+     0.5008
+    ],
+    "over25": 0.6498
+   },
+   "stats_market": {
+    "result": [
+     0.2415,
+     0.2481,
+     0.5104
+    ],
+    "over25": 0.6647
+   },
+   "bookmaker": {
+    "result": [
+     0.249,
+     0.2253,
+     0.5257
+    ],
+    "over25": 0.6818
+   }
+  },
+  {
+   "league": "D1",
+   "date": "2026-10-17",
+   "time": "14:30",
+   "home": "Schalke 04",
+   "away": "Mainz",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3129,
+     0.2734,
+     0.4137
+    ],
+    "over25": 0.6107
+   },
+   "stats_market": {
+    "result": [
+     0.3207,
+     0.2714,
+     0.408
+    ],
+    "over25": 0.5656
+   },
+   "bookmaker": {
+    "result": [
+     0.3121,
+     0.258,
+     0.43
+    ],
+    "over25": 0.5867
+   }
+  },
+  {
+   "league": "D1",
+   "date": "2026-10-17",
+   "time": "14:30",
+   "home": "Union Berlin",
+   "away": "Dortmund",
+   "established": true,
+   "stats": {
+    "result": [
+     0.1256,
+     0.2018,
+     0.6726
+    ],
+    "over25": 0.6462
+   },
+   "stats_market": {
+    "result": [
+     0.1449,
+     0.203,
+     0.6521
+    ],
+    "over25": 0.6691
+   },
+   "bookmaker": {
+    "result": [
+     0.1732,
+     0.22,
+     0.6068
+    ],
+    "over25": 0.6368
+   }
+  },
+  {
+   "league": "D1",
+   "date": "2026-10-17",
+   "time": "14:30",
+   "home": "Werder Bremen",
+   "away": "Paderborn",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4211,
+     0.3276,
+     0.2514
+    ],
+    "over25": 0.5951
+   },
+   "stats_market": {
+    "result": [
+     0.5305,
+     0.2552,
+     0.2143
+    ],
+    "over25": 0.6015
+   },
+   "bookmaker": {
+    "result": [
+     0.5424,
+     0.226,
+     0.2315
+    ],
+    "over25": 0.6203
+   }
+  },
+  {
+   "league": "D1",
+   "date": "2026-10-17",
+   "time": "17:30",
+   "home": "Bayern Munich",
+   "away": "RB Leipzig",
+   "established": true,
+   "stats": {
+    "result": [
+     0.7441,
+     0.1673,
+     0.0886
+    ],
+    "over25": 0.7748
+   },
+   "stats_market": {
+    "result": [
+     0.756,
+     0.1543,
+     0.0897
+    ],
+    "over25": 0.8206
+   },
+   "bookmaker": {
+    "result": [
+     0.7745,
+     0.126,
+     0.0995
+    ],
+    "over25": 0.8283
+   }
+  },
+  {
+   "league": "D2",
+   "date": "2026-10-17",
+   "time": "12:00",
+   "home": "Greuther Furth",
+   "away": "Braunschweig",
+   "established": true,
+   "stats": {
+    "result": [
+     0.43,
+     0.3004,
+     0.2696
+    ],
+    "over25": 0.5842
+   },
+   "stats_market": {
+    "result": [
+     0.4319,
+     0.267,
+     0.3011
+    ],
+    "over25": 0.6392
+   },
+   "bookmaker": {
+    "result": [
+     0.4322,
+     0.2581,
+     0.3097
+    ],
+    "over25": 0.6107
+   }
+  },
+  {
+   "league": "D2",
+   "date": "2026-10-17",
+   "time": "12:00",
+   "home": "Kaiserslautern",
+   "away": "Bochum",
+   "established": true,
+   "stats": {
+    "result": [
+     0.41,
+     0.2661,
+     0.3239
+    ],
+    "over25": 0.5817
+   },
+   "stats_market": {
+    "result": [
+     0.4092,
+     0.2869,
+     0.3039
+    ],
+    "over25": 0.5988
+   },
+   "bookmaker": {
+    "result": [
+     0.429,
+     0.2635,
+     0.3075
+    ],
+    "over25": 0.5526
+   }
+  },
+  {
+   "league": "D2",
+   "date": "2026-10-17",
+   "time": "12:00",
+   "home": "Wolfsburg",
+   "away": "Heidenheim",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4093,
+     0.2641,
+     0.3265
+    ],
+    "over25": 0.6508
+   },
+   "stats_market": {
+    "result": [
+     0.5947,
+     0.1991,
+     0.2061
+    ],
+    "over25": 0.7137
+   },
+   "bookmaker": {
+    "result": [
+     0.557,
+     0.2215,
+     0.2215
+    ],
+    "over25": 0.6951
+   }
+  },
+  {
+   "league": "D2",
+   "date": "2026-10-17",
+   "time": "19:30",
+   "home": "Hannover",
+   "away": "St Pauli",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3386,
+     0.2956,
+     0.3658
+    ],
+    "over25": 0.6133
+   },
+   "stats_market": {
+    "result": [
+     0.4464,
+     0.2692,
+     0.2844
+    ],
+    "over25": 0.6409
+   },
+   "bookmaker": {
+    "result": [
+     0.4334,
+     0.2528,
+     0.3138
+    ],
+    "over25": 0.5995
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-17",
+   "time": "12:30",
+   "home": "Everton",
+   "away": "Chelsea",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4126,
+     0.2786,
+     0.3088
+    ],
+    "over25": 0.5344
+   },
+   "stats_market": {
+    "result": [
+     0.3357,
+     0.2599,
+     0.4044
+    ],
+    "over25": 0.5669
+   },
+   "bookmaker": {
+    "result": [
+     0.2971,
+     0.2502,
+     0.4527
+    ],
+    "over25": 0.5685
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Brentford",
+   "away": "Liverpool",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3555,
+     0.2929,
+     0.3516
+    ],
+    "over25": 0.5189
+   },
+   "stats_market": {
+    "result": [
+     0.4062,
+     0.2668,
+     0.327
+    ],
+    "over25": 0.6289
+   },
+   "bookmaker": {
+    "result": [
+     0.4146,
+     0.2543,
+     0.3311
+    ],
+    "over25": 0.6025
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Fulham",
+   "away": "Hull",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4308,
+     0.2902,
+     0.279
+    ],
+    "over25": 0.5059
+   },
+   "stats_market": {
+    "result": [
+     0.5577,
+     0.2541,
+     0.1882
+    ],
+    "over25": 0.5592
+   },
+   "bookmaker": {
+    "result": [
+     0.547,
+     0.2427,
+     0.2103
+    ],
+    "over25": 0.5483
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Man City",
+   "away": "Ipswich",
+   "established": true,
+   "stats": {
+    "result": [
+     0.8077,
+     0.1276,
+     0.0647
+    ],
+    "over25": 0.682
+   },
+   "stats_market": {
+    "result": [
+     0.7434,
+     0.1773,
+     0.0793
+    ],
+    "over25": 0.6886
+   },
+   "bookmaker": {
+    "result": [
+     0.7781,
+     0.1356,
+     0.0863
+    ],
+    "over25": 0.6818
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-17",
+   "time": "17:30",
+   "home": "Newcastle",
+   "away": "Aston Villa",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4357,
+     0.2709,
+     0.2933
+    ],
+    "over25": 0.5333
+   },
+   "stats_market": {
+    "result": [
+     0.4253,
+     0.273,
+     0.3016
+    ],
+    "over25": 0.5824
+   },
+   "bookmaker": {
+    "result": [
+     0.4211,
+     0.2632,
+     0.3158
+    ],
+    "over25": 0.5867
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "12:30",
+   "home": "Middlesbrough",
+   "away": "Cardiff",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6145,
+     0.2113,
+     0.1743
+    ],
+    "over25": 0.6029
+   },
+   "stats_market": {
+    "result": [
+     0.65,
+     0.1769,
+     0.1731
+    ],
+    "over25": 0.6432
+   },
+   "bookmaker": {
+    "result": [
+     0.6242,
+     0.2067,
+     0.1691
+    ],
+    "over25": 0.6818
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "12:30",
+   "home": "Millwall",
+   "away": "Lincoln",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6327,
+     0.1974,
+     0.1699
+    ],
+    "over25": 0.5435
+   },
+   "stats_market": {
+    "result": [
+     0.5825,
+     0.2402,
+     0.1773
+    ],
+    "over25": 0.55
+   },
+   "bookmaker": {
+    "result": [
+     0.5728,
+     0.2427,
+     0.1845
+    ],
+    "over25": 0.5263
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "12:30",
+   "home": "Watford",
+   "away": "Charlton",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4012,
+     0.2921,
+     0.3067
+    ],
+    "over25": 0.4666
+   },
+   "stats_market": {
+    "result": [
+     0.3311,
+     0.2926,
+     0.3763
+    ],
+    "over25": 0.4842
+   },
+   "bookmaker": {
+    "result": [
+     0.3774,
+     0.2802,
+     0.3424
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Birmingham",
+   "away": "QPR",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5103,
+     0.2499,
+     0.2397
+    ],
+    "over25": 0.5577
+   },
+   "stats_market": {
+    "result": [
+     0.4661,
+     0.2652,
+     0.2687
+    ],
+    "over25": 0.5098
+   },
+   "bookmaker": {
+    "result": [
+     0.4752,
+     0.2661,
+     0.2587
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Bristol City",
+   "away": "Sheffield United",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5131,
+     0.2763,
+     0.2106
+    ],
+    "over25": 0.5547
+   },
+   "stats_market": {
+    "result": [
+     0.462,
+     0.2584,
+     0.2795
+    ],
+    "over25": 0.5175
+   },
+   "bookmaker": {
+    "result": [
+     0.4654,
+     0.2673,
+     0.2673
+    ],
+    "over25": 0.5263
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Derby",
+   "away": "Stoke",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4392,
+     0.2638,
+     0.297
+    ],
+    "over25": 0.5197
+   },
+   "stats_market": {
+    "result": [
+     0.3283,
+     0.2724,
+     0.3993
+    ],
+    "over25": 0.4887
+   },
+   "bookmaker": {
+    "result": [
+     0.325,
+     0.2724,
+     0.4027
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Norwich",
+   "away": "Portsmouth",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4737,
+     0.2545,
+     0.2718
+    ],
+    "over25": 0.554
+   },
+   "stats_market": {
+    "result": [
+     0.5558,
+     0.2445,
+     0.1996
+    ],
+    "over25": 0.5607
+   },
+   "bookmaker": {
+    "result": [
+     0.5454,
+     0.2392,
+     0.2154
+    ],
+    "over25": 0.5483
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Southampton",
+   "away": "Bolton",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6821,
+     0.1911,
+     0.1268
+    ],
+    "over25": 0.5766
+   },
+   "stats_market": {
+    "result": [
+     0.6493,
+     0.1796,
+     0.1711
+    ],
+    "over25": 0.6195
+   },
+   "bookmaker": {
+    "result": [
+     0.6464,
+     0.1973,
+     0.1562
+    ],
+    "over25": 0.6563
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Swansea",
+   "away": "West Ham",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3495,
+     0.2717,
+     0.3788
+    ],
+    "over25": 0.5761
+   },
+   "stats_market": {
+    "result": [
+     0.3029,
+     0.2502,
+     0.4469
+    ],
+    "over25": 0.5646
+   },
+   "bookmaker": {
+    "result": [
+     0.3097,
+     0.2478,
+     0.4425
+    ],
+    "over25": 0.5483
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "West Brom",
+   "away": "Blackburn",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4717,
+     0.2646,
+     0.2638
+    ],
+    "over25": 0.4574
+   },
+   "stats_market": {
+    "result": [
+     0.4938,
+     0.2702,
+     0.236
+    ],
+    "over25": 0.4903
+   },
+   "bookmaker": {
+    "result": [
+     0.5009,
+     0.2662,
+     0.2329
+    ],
+    "over25": 0.4737
+   }
+  },
+  {
+   "league": "E1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Wrexham",
+   "away": "Preston",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5759,
+     0.2357,
+     0.1883
+    ],
+    "over25": 0.4595
+   },
+   "stats_market": {
+    "result": [
+     0.5759,
+     0.2444,
+     0.1797
+    ],
+    "over25": 0.4986
+   },
+   "bookmaker": {
+    "result": [
+     0.5693,
+     0.2365,
+     0.1942
+    ],
+    "over25": 0.513
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "12:30",
+   "home": "Milton Keynes Dons",
+   "away": "Luton",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2795,
+     0.2232,
+     0.4973
+    ],
+    "over25": 0.5557
+   },
+   "stats_market": {
+    "result": [
+     0.3165,
+     0.2597,
+     0.4238
+    ],
+    "over25": 0.5627
+   },
+   "bookmaker": {
+    "result": [
+     0.2975,
+     0.2635,
+     0.4391
+    ],
+    "over25": 0.5526
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "12:30",
+   "home": "Peterboro",
+   "away": "Burton",
+   "established": true,
+   "stats": {
+    "result": [
+     0.379,
+     0.2752,
+     0.3458
+    ],
+    "over25": 0.4685
+   },
+   "stats_market": {
+    "result": [
+     0.5064,
+     0.2396,
+     0.254
+    ],
+    "over25": 0.5509
+   },
+   "bookmaker": {
+    "result": [
+     0.5149,
+     0.2425,
+     0.2425
+    ],
+    "over25": 0.5814
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Barnsley",
+   "away": "Cambridge",
+   "established": true,
+   "stats": {
+    "result": [
+     0.341,
+     0.2839,
+     0.3751
+    ],
+    "over25": 0.5196
+   },
+   "stats_market": {
+    "result": [
+     0.3724,
+     0.2618,
+     0.3657
+    ],
+    "over25": 0.597
+   },
+   "bookmaker": {
+    "result": [
+     0.3909,
+     0.2625,
+     0.3466
+    ],
+    "over25": 0.5814
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Bradford",
+   "away": "Stevenage",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4663,
+     0.2729,
+     0.2607
+    ],
+    "over25": 0.4231
+   },
+   "stats_market": {
+    "result": [
+     0.5138,
+     0.2659,
+     0.2203
+    ],
+    "over25": 0.4231
+   },
+   "bookmaker": {
+    "result": [
+     0.497,
+     0.2719,
+     0.2311
+    ],
+    "over25": 0.4372
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Leicester",
+   "away": "Doncaster",
+   "established": true,
+   "stats": {
+    "result": [
+     0.442,
+     0.299,
+     0.259
+    ],
+    "over25": 0.4962
+   },
+   "stats_market": {
+    "result": [
+     0.5069,
+     0.2439,
+     0.2493
+    ],
+    "over25": 0.6007
+   },
+   "bookmaker": {
+    "result": [
+     0.5132,
+     0.2418,
+     0.245
+    ],
+    "over25": 0.6107
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Leyton Orient",
+   "away": "Blackpool",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4158,
+     0.2566,
+     0.3276
+    ],
+    "over25": 0.5017
+   },
+   "stats_market": {
+    "result": [
+     0.4072,
+     0.2799,
+     0.3129
+    ],
+    "over25": 0.5428
+   },
+   "bookmaker": {
+    "result": [
+     0.429,
+     0.2635,
+     0.3075
+    ],
+    "over25": 0.5628
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Plymouth",
+   "away": "Huddersfield",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4739,
+     0.2806,
+     0.2455
+    ],
+    "over25": 0.5619
+   },
+   "stats_market": {
+    "result": [
+     0.3555,
+     0.2624,
+     0.3821
+    ],
+    "over25": 0.5967
+   },
+   "bookmaker": {
+    "result": [
+     0.3638,
+     0.2651,
+     0.3711
+    ],
+    "over25": 0.5714
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Sheffield Weds",
+   "away": "AFC Wimbledon",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6479,
+     0.1988,
+     0.1533
+    ],
+    "over25": 0.5797
+   },
+   "stats_market": {
+    "result": [
+     0.5915,
+     0.2318,
+     0.1767
+    ],
+    "over25": 0.5931
+   },
+   "bookmaker": {
+    "result": [
+     0.5658,
+     0.2412,
+     0.193
+    ],
+    "over25": 0.5628
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Stockport",
+   "away": "Bromley",
+   "established": true,
+   "stats": {
+    "result": [
+     0.716,
+     0.1669,
+     0.117
+    ],
+    "over25": 0.6113
+   },
+   "stats_market": {
+    "result": [
+     0.7624,
+     0.137,
+     0.1006
+    ],
+    "over25": 0.7398
+   },
+   "bookmaker": {
+    "result": [
+     0.7545,
+     0.1534,
+     0.0921
+    ],
+    "over25": 0.6522
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Wigan",
+   "away": "Reading",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2992,
+     0.238,
+     0.4629
+    ],
+    "over25": 0.5056
+   },
+   "stats_market": {
+    "result": [
+     0.2688,
+     0.2479,
+     0.4833
+    ],
+    "over25": 0.5368
+   },
+   "bookmaker": {
+    "result": [
+     0.2628,
+     0.2555,
+     0.4816
+    ],
+    "over25": 0.5628
+   }
+  },
+  {
+   "league": "E2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Wycombe",
+   "away": "Notts County",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4394,
+     0.2687,
+     0.2919
+    ],
+    "over25": 0.5225
+   },
+   "stats_market": {
+    "result": [
+     0.4719,
+     0.2573,
+     0.2708
+    ],
+    "over25": 0.541
+   },
+   "bookmaker": {
+    "result": [
+     0.4828,
+     0.2712,
+     0.2459
+    ],
+    "over25": 0.5195
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "12:30",
+   "home": "Fleetwood Town",
+   "away": "Rotherham",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4125,
+     0.2976,
+     0.2899
+    ],
+    "over25": 0.4482
+   },
+   "stats_market": {
+    "result": [
+     0.4384,
+     0.2655,
+     0.2961
+    ],
+    "over25": 0.4757
+   },
+   "bookmaker": {
+    "result": [
+     0.4381,
+     0.2788,
+     0.2831
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "12:30",
+   "home": "Shrewsbury",
+   "away": "Bristol Rvs",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3844,
+     0.2897,
+     0.3259
+    ],
+    "over25": 0.4558
+   },
+   "stats_market": {
+    "result": [
+     0.3378,
+     0.258,
+     0.4041
+    ],
+    "over25": 0.4589
+   },
+   "bookmaker": {
+    "result": [
+     0.2986,
+     0.2805,
+     0.4208
+    ],
+    "over25": 0.4605
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Accrington",
+   "away": "Gillingham",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4739,
+     0.2696,
+     0.2565
+    ],
+    "over25": 0.4743
+   },
+   "stats_market": {
+    "result": [
+     0.4234,
+     0.2764,
+     0.3002
+    ],
+    "over25": 0.4693
+   },
+   "bookmaker": {
+    "result": [
+     0.4112,
+     0.2804,
+     0.3084
+    ],
+    "over25": 0.4868
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Colchester",
+   "away": "Exeter",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3477,
+     0.3017,
+     0.3506
+    ],
+    "over25": 0.4289
+   },
+   "stats_market": {
+    "result": [
+     0.4254,
+     0.2757,
+     0.2989
+    ],
+    "over25": 0.4725
+   },
+   "bookmaker": {
+    "result": [
+     0.4533,
+     0.2733,
+     0.2733
+    ],
+    "over25": 0.4805
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Crewe",
+   "away": "Rochdale",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5291,
+     0.2528,
+     0.218
+    ],
+    "over25": 0.464
+   },
+   "stats_market": {
+    "result": [
+     0.516,
+     0.2615,
+     0.2225
+    ],
+    "over25": 0.5061
+   },
+   "bookmaker": {
+    "result": [
+     0.5195,
+     0.248,
+     0.2325
+    ],
+    "over25": 0.513
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Grimsby",
+   "away": "Northampton",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4725,
+     0.2513,
+     0.2762
+    ],
+    "over25": 0.4925
+   },
+   "stats_market": {
+    "result": [
+     0.563,
+     0.2531,
+     0.1839
+    ],
+    "over25": 0.519
+   },
+   "bookmaker": {
+    "result": [
+     0.5695,
+     0.246,
+     0.1845
+    ],
+    "over25": 0.5195
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Newport County",
+   "away": "York",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2995,
+     0.2944,
+     0.4061
+    ],
+    "over25": 0.4822
+   },
+   "stats_market": {
+    "result": [
+     0.2656,
+     0.2512,
+     0.4832
+    ],
+    "over25": 0.5772
+   },
+   "bookmaker": {
+    "result": [
+     0.2464,
+     0.2567,
+     0.4969
+    ],
+    "over25": 0.5526
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Oldham",
+   "away": "Cheltenham",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5241,
+     0.2526,
+     0.2233
+    ],
+    "over25": 0.4588
+   },
+   "stats_market": {
+    "result": [
+     0.5765,
+     0.234,
+     0.1895
+    ],
+    "over25": 0.5348
+   },
+   "bookmaker": {
+    "result": [
+     0.5561,
+     0.2308,
+     0.2132
+    ],
+    "over25": 0.5395
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Port Vale",
+   "away": "Chesterfield",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3207,
+     0.3345,
+     0.3448
+    ],
+    "over25": 0.5109
+   },
+   "stats_market": {
+    "result": [
+     0.3468,
+     0.2902,
+     0.363
+    ],
+    "over25": 0.5172
+   },
+   "bookmaker": {
+    "result": [
+     0.3565,
+     0.2695,
+     0.374
+    ],
+    "over25": 0.5195
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Salford",
+   "away": "Crawley Town",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6812,
+     0.2204,
+     0.0985
+    ],
+    "over25": 0.5294
+   },
+   "stats_market": {
+    "result": [
+     0.704,
+     0.208,
+     0.088
+    ],
+    "over25": 0.6404
+   },
+   "bookmaker": {
+    "result": [
+     0.6868,
+     0.1827,
+     0.1305
+    ],
+    "over25": 0.6522
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Swindon",
+   "away": "Walsall",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3582,
+     0.2753,
+     0.3665
+    ],
+    "over25": 0.4646
+   },
+   "stats_market": {
+    "result": [
+     0.3383,
+     0.2714,
+     0.3903
+    ],
+    "over25": 0.5505
+   },
+   "bookmaker": {
+    "result": [
+     0.3495,
+     0.2646,
+     0.3859
+    ],
+    "over25": 0.5628
+   }
+  },
+  {
+   "league": "E3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Tranmere",
+   "away": "Barnet",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2154,
+     0.2354,
+     0.5493
+    ],
+    "over25": 0.5031
+   },
+   "stats_market": {
+    "result": [
+     0.2458,
+     0.2454,
+     0.5088
+    ],
+    "over25": 0.5717
+   },
+   "bookmaker": {
+    "result": [
+     0.2718,
+     0.2567,
+     0.4715
+    ],
+    "over25": 0.5628
+   }
+  },
+  {
+   "league": "F1",
+   "date": "2026-10-17",
+   "time": "16:15",
+   "home": "Strasbourg",
+   "away": "Paris SG",
+   "established": true,
+   "stats": {
+    "result": [
+     0.207,
+     0.2171,
+     0.5759
+    ],
+    "over25": 0.5988
+   },
+   "stats_market": {
+    "result": [
+     0.1086,
+     0.1603,
+     0.7311
+    ],
+    "over25": 0.6519
+   },
+   "bookmaker": {
+    "result": [
+     0.1515,
+     0.1722,
+     0.6763
+    ],
+    "over25": 0.7188
+   }
+  },
+  {
+   "league": "F1",
+   "date": "2026-10-17",
+   "time": "19:45",
+   "home": "Lille",
+   "away": "Brest",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5294,
+     0.2773,
+     0.1933
+    ],
+    "over25": 0.519
+   },
+   "stats_market": {
+    "result": [
+     0.5224,
+     0.2432,
+     0.2345
+    ],
+    "over25": 0.5945
+   },
+   "bookmaker": {
+    "result": [
+     0.5113,
+     0.2522,
+     0.2365
+    ],
+    "over25": 0.5685
+   }
+  },
+  {
+   "league": "F1",
+   "date": "2026-10-17",
+   "time": "19:45",
+   "home": "Troyes",
+   "away": "Lens",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2708,
+     0.2155,
+     0.5137
+    ],
+    "over25": 0.6625
+   },
+   "stats_market": {
+    "result": [
+     0.2529,
+     0.2392,
+     0.5079
+    ],
+    "over25": 0.6198
+   },
+   "bookmaker": {
+    "result": [
+     0.2497,
+     0.2373,
+     0.513
+    ],
+    "over25": 0.6025
+   }
+  },
+  {
+   "league": "F2",
+   "date": "2026-10-17",
+   "time": "13:00",
+   "home": "Metz",
+   "away": "Sochaux",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4962,
+     0.2473,
+     0.2565
+    ],
+    "over25": 0.4782
+   },
+   "stats_market": {
+    "result": [
+     0.5026,
+     0.287,
+     0.2104
+    ],
+    "over25": 0.4765
+   },
+   "bookmaker": {
+    "result": [
+     0.5093,
+     0.2785,
+     0.2122
+    ],
+    "over25": 0.4868
+   }
+  },
+  {
+   "league": "F2",
+   "date": "2026-10-17",
+   "time": "13:00",
+   "home": "Nantes",
+   "away": "Dunkerque",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4667,
+     0.2839,
+     0.2494
+    ],
+    "over25": 0.4433
+   },
+   "stats_market": {
+    "result": [
+     0.5694,
+     0.2478,
+     0.1828
+    ],
+    "over25": 0.5618
+   },
+   "bookmaker": {
+    "result": [
+     0.5627,
+     0.2572,
+     0.1801
+    ],
+    "over25": 0.5395
+   }
+  },
+  {
+   "league": "F2",
+   "date": "2026-10-17",
+   "time": "19:00",
+   "home": "Red Star",
+   "away": "St Etienne",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4163,
+     0.3095,
+     0.2742
+    ],
+    "over25": 0.5113
+   },
+   "stats_market": {
+    "result": [
+     0.3332,
+     0.3032,
+     0.3636
+    ],
+    "over25": 0.5164
+   },
+   "bookmaker": {
+    "result": [
+     0.3002,
+     0.2905,
+     0.4093
+    ],
+    "over25": 0.5132
+   }
+  },
+  {
+   "league": "G1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Levadeiakos",
+   "away": "Volos NFC",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4718,
+     0.3214,
+     0.2069
+    ],
+    "over25": 0.3911
+   },
+   "stats_market": {
+    "result": [
+     0.4105,
+     0.3067,
+     0.2828
+    ],
+    "over25": 0.4473
+   },
+   "bookmaker": {
+    "result": [
+     0.4437,
+     0.2823,
+     0.274
+    ],
+    "over25": 0.4605
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "home": "Venezia",
+   "away": "Napoli",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2186,
+     0.2064,
+     0.575
+    ],
+    "over25": 0.5398
+   },
+   "stats_market": {
+    "result": [
+     0.1789,
+     0.2049,
+     0.6162
+    ],
+    "over25": 0.6023
+   },
+   "bookmaker": {
+    "result": [
+     0.1915,
+     0.2455,
+     0.5631
+    ],
+    "over25": 0.5483
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-17",
+   "time": "17:00",
+   "home": "Bologna",
+   "away": "Inter",
+   "established": true,
+   "stats": {
+    "result": [
+     0.0941,
+     0.1686,
+     0.7373
+    ],
+    "over25": 0.5828
+   },
+   "stats_market": {
+    "result": [
+     0.126,
+     0.2224,
+     0.6517
+    ],
+    "over25": 0.5931
+   },
+   "bookmaker": {
+    "result": [
+     0.1733,
+     0.2383,
+     0.5884
+    ],
+    "over25": 0.5685
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-17",
+   "time": "19:45",
+   "home": "Roma",
+   "away": "Genoa",
+   "established": true,
+   "stats": {
+    "result": [
+     0.7372,
+     0.1796,
+     0.0831
+    ],
+    "over25": 0.5762
+   },
+   "stats_market": {
+    "result": [
+     0.7004,
+     0.2134,
+     0.0862
+    ],
+    "over25": 0.5845
+   },
+   "bookmaker": {
+    "result": [
+     0.6539,
+     0.2107,
+     0.1354
+    ],
+    "over25": 0.5483
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "home": "Ascoli",
+   "away": "Empoli",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5068,
+     0.3066,
+     0.1866
+    ],
+    "over25": 0.4535
+   },
+   "stats_market": {
+    "result": [
+     0.5185,
+     0.2714,
+     0.2102
+    ],
+    "over25": 0.5254
+   },
+   "bookmaker": {
+    "result": [
+     0.4998,
+     0.2741,
+     0.2261
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "home": "Benevento",
+   "away": "Vicenza",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4818,
+     0.2988,
+     0.2194
+    ],
+    "over25": 0.4702
+   },
+   "stats_market": {
+    "result": [
+     0.4562,
+     0.2941,
+     0.2497
+    ],
+    "over25": 0.5155
+   },
+   "bookmaker": {
+    "result": [
+     0.4704,
+     0.2837,
+     0.2459
+    ],
+    "over25": 0.5263
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "home": "Carrarese",
+   "away": "Modena",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2989,
+     0.3184,
+     0.3828
+    ],
+    "over25": 0.4936
+   },
+   "stats_market": {
+    "result": [
+     0.266,
+     0.2964,
+     0.4376
+    ],
+    "over25": 0.5052
+   },
+   "bookmaker": {
+    "result": [
+     0.2049,
+     0.2712,
+     0.5239
+    ],
+    "over25": 0.5132
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "home": "Padova",
+   "away": "Virtus Entella",
+   "established": true,
+   "stats": {
+    "result": [
+     0.348,
+     0.3589,
+     0.293
+    ],
+    "over25": 0.4248
+   },
+   "stats_market": {
+    "result": [
+     0.369,
+     0.3555,
+     0.2755
+    ],
+    "over25": 0.4492
+   },
+   "bookmaker": {
+    "result": [
+     0.3947,
+     0.3026,
+     0.3026
+    ],
+    "over25": 0.4372
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-17",
+   "time": "16:15",
+   "home": "Mantova",
+   "away": "Palermo",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2807,
+     0.369,
+     0.3503
+    ],
+    "over25": 0.5254
+   },
+   "stats_market": {
+    "result": [
+     0.2438,
+     0.2969,
+     0.4593
+    ],
+    "over25": 0.5194
+   },
+   "bookmaker": {
+    "result": [
+     0.2831,
+     0.2788,
+     0.4381
+    ],
+    "over25": 0.5395
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-17",
+   "time": "18:30",
+   "home": "Pisa",
+   "away": "Cremonese",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5053,
+     0.2922,
+     0.2025
+    ],
+    "over25": 0.516
+   },
+   "stats_market": {
+    "result": [
+     0.4304,
+     0.3279,
+     0.2416
+    ],
+    "over25": 0.4926
+   },
+   "bookmaker": {
+    "result": [
+     0.4264,
+     0.2957,
+     0.2778
+    ],
+    "over25": 0.4474
+   }
+  },
+  {
+   "league": "N1",
+   "date": "2026-10-17",
+   "time": "15:30",
+   "home": "Den Haag",
+   "away": "PSV Eindhoven",
+   "established": true,
+   "stats": {
+    "result": [
+     0.0927,
+     0.1357,
+     0.7716
+    ],
+    "over25": 0.7017
+   },
+   "stats_market": {
+    "result": [
+     0.1046,
+     0.1466,
+     0.7489
+    ],
+    "over25": 0.7538
+   },
+   "bookmaker": {
+    "result": [
+     0.1179,
+     0.1509,
+     0.7312
+    ],
+    "over25": 0.7619
+   }
+  },
+  {
+   "league": "N1",
+   "date": "2026-10-17",
+   "time": "19:00",
+   "home": "Telstar",
+   "away": "Feyenoord",
+   "established": true,
+   "stats": {
+    "result": [
+     0.0872,
+     0.1526,
+     0.7602
+    ],
+    "over25": 0.6683
+   },
+   "stats_market": {
+    "result": [
+     0.0925,
+     0.1468,
+     0.7607
+    ],
+    "over25": 0.6519
+   },
+   "bookmaker": {
+    "result": [
+     0.125,
+     0.1704,
+     0.7046
+    ],
+    "over25": 0.7188
+   }
+  },
+  {
+   "league": "N1",
+   "date": "2026-10-17",
+   "time": "20:00",
+   "home": "Sparta Rotterdam",
+   "away": "Willem II",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6234,
+     0.2022,
+     0.1745
+    ],
+    "over25": 0.6115
+   },
+   "stats_market": {
+    "result": [
+     0.545,
+     0.2729,
+     0.1821
+    ],
+    "over25": 0.6023
+   },
+   "bookmaker": {
+    "result": [
+     0.583,
+     0.2181,
+     0.1988
+    ],
+    "over25": 0.6373
+   }
+  },
+  {
+   "league": "SC0",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Aberdeen",
+   "away": "St Mirren",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4751,
+     0.2658,
+     0.2591
+    ],
+    "over25": 0.4589
+   },
+   "stats_market": {
+    "result": [
+     0.5163,
+     0.2617,
+     0.222
+    ],
+    "over25": 0.4937
+   },
+   "bookmaker": {
+    "result": [
+     0.5195,
+     0.248,
+     0.2325
+    ],
+    "over25": 0.5263
+   }
+  },
+  {
+   "league": "SC0",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Hibernian",
+   "away": "Falkirk",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5396,
+     0.2395,
+     0.2209
+    ],
+    "over25": 0.4828
+   },
+   "stats_market": {
+    "result": [
+     0.6184,
+     0.2009,
+     0.1807
+    ],
+    "over25": 0.5676
+   },
+   "bookmaker": {
+    "result": [
+     0.586,
+     0.23,
+     0.184
+    ],
+    "over25": 0.5483
+   }
+  },
+  {
+   "league": "SC0",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Kilmarnock",
+   "away": "Motherwell",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3296,
+     0.2964,
+     0.374
+    ],
+    "over25": 0.4916
+   },
+   "stats_market": {
+    "result": [
+     0.276,
+     0.2689,
+     0.4551
+    ],
+    "over25": 0.6262
+   },
+   "bookmaker": {
+    "result": [
+     0.2871,
+     0.2488,
+     0.4642
+    ],
+    "over25": 0.5867
+   }
+  },
+  {
+   "league": "SC0",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "St Johnstone",
+   "away": "Dundee United",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2917,
+     0.295,
+     0.4133
+    ],
+    "over25": 0.5552
+   },
+   "stats_market": {
+    "result": [
+     0.3307,
+     0.271,
+     0.3984
+    ],
+    "over25": 0.5305
+   },
+   "bookmaker": {
+    "result": [
+     0.362,
+     0.2658,
+     0.3722
+    ],
+    "over25": 0.5263
+   }
+  },
+  {
+   "league": "SC0",
+   "date": "2026-10-17",
+   "time": "20:00",
+   "home": "Dundee",
+   "away": "Rangers",
+   "established": true,
+   "stats": {
+    "result": [
+     0.1487,
+     0.1986,
+     0.6528
+    ],
+    "over25": 0.6303
+   },
+   "stats_market": {
+    "result": [
+     0.1373,
+     0.1737,
+     0.689
+    ],
+    "over25": 0.6287
+   },
+   "bookmaker": {
+    "result": [
+     0.1241,
+     0.1862,
+     0.6897
+    ],
+    "over25": 0.6203
+   }
+  },
+  {
+   "league": "SC1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Dunfermline",
+   "away": "Livingston",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3859,
+     0.3101,
+     0.3039
+    ],
+    "over25": 0.3764
+   },
+   "stats_market": {
+    "result": [
+     0.3557,
+     0.2852,
+     0.3591
+    ],
+    "over25": 0.5033
+   },
+   "bookmaker": {
+    "result": [
+     0.3572,
+     0.2706,
+     0.3721
+    ],
+    "over25": 0.5263
+   }
+  },
+  {
+   "league": "SC1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Inverness C",
+   "away": "Arbroath",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5309,
+     0.2626,
+     0.2065
+    ],
+    "over25": 0.5492
+   },
+   "stats_market": {
+    "result": [
+     0.5546,
+     0.2331,
+     0.2122
+    ],
+    "over25": 0.4815
+   },
+   "bookmaker": {
+    "result": [
+     0.6072,
+     0.2365,
+     0.1563
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "SC1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Morton",
+   "away": "Queens Park",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3674,
+     0.3257,
+     0.3069
+    ],
+    "over25": 0.4608
+   },
+   "stats_market": {
+    "result": [
+     0.3453,
+     0.2966,
+     0.3582
+    ],
+    "over25": 0.4293
+   },
+   "bookmaker": {
+    "result": [
+     0.3596,
+     0.2809,
+     0.3596
+    ],
+    "over25": 0.4541
+   }
+  },
+  {
+   "league": "SC1",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Stenhousemuir",
+   "away": "Raith Rvs",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3483,
+     0.3358,
+     0.3159
+    ],
+    "over25": 0.3984
+   },
+   "stats_market": {
+    "result": [
+     0.3026,
+     0.3022,
+     0.3952
+    ],
+    "over25": 0.4013
+   },
+   "bookmaker": {
+    "result": [
+     0.2905,
+     0.2905,
+     0.4189
+    ],
+    "over25": 0.4286
+   }
+  },
+  {
+   "league": "SC2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "East Fife",
+   "away": "Alloa",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4026,
+     0.2801,
+     0.3173
+    ],
+    "over25": 0.5087
+   },
+   "stats_market": {
+    "result": [
+     0.433,
+     0.2788,
+     0.2883
+    ],
+    "over25": 0.4663
+   },
+   "bookmaker": {
+    "result": [
+     0.4205,
+     0.2782,
+     0.3013
+    ],
+    "over25": 0.4803
+   }
+  },
+  {
+   "league": "SC2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "East Kilbride",
+   "away": "Montrose",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5975,
+     0.2231,
+     0.1795
+    ],
+    "over25": 0.5664
+   },
+   "stats_market": {
+    "result": [
+     0.555,
+     0.263,
+     0.1821
+    ],
+    "over25": 0.6356
+   },
+   "bookmaker": {
+    "result": [
+     0.5537,
+     0.2392,
+     0.2071
+    ],
+    "over25": 0.5995
+   }
+  },
+  {
+   "league": "SC2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Peterhead",
+   "away": "Cove Rangers",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4287,
+     0.2706,
+     0.3007
+    ],
+    "over25": 0.4764
+   },
+   "stats_market": {
+    "result": [
+     0.4006,
+     0.262,
+     0.3374
+    ],
+    "over25": 0.5558
+   },
+   "bookmaker": {
+    "result": [
+     0.3905,
+     0.2641,
+     0.3454
+    ],
+    "over25": 0.5628
+   }
+  },
+  {
+   "league": "SC2",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Queen of Sth",
+   "away": "Ross County",
+   "established": true,
+   "stats": {
+    "result": [
+     0.1184,
+     0.2131,
+     0.6685
+    ],
+    "over25": 0.6361
+   },
+   "stats_market": {
+    "result": [
+     0.0919,
+     0.172,
+     0.7361
+    ],
+    "over25": 0.6276
+   },
+   "bookmaker": {
+    "result": [
+     0.1196,
+     0.163,
+     0.7174
+    ],
+    "over25": 0.6881
+   }
+  },
+  {
+   "league": "SC2",
+   "date": "2026-10-17",
+   "time": "17:30",
+   "home": "Airdrie Utd",
+   "away": "Hamilton",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2466,
+     0.2937,
+     0.4598
+    ],
+    "over25": 0.5532
+   },
+   "stats_market": {
+    "result": [
+     0.214,
+     0.289,
+     0.497
+    ],
+    "over25": 0.5254
+   },
+   "bookmaker": {
+    "result": [
+     0.2645,
+     0.2645,
+     0.4709
+    ],
+    "over25": 0.5395
+   }
+  },
+  {
+   "league": "SC3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Clyde",
+   "away": "Annan Athletic",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5938,
+     0.2082,
+     0.198
+    ],
+    "over25": 0.5889
+   },
+   "stats_market": {
+    "result": [
+     0.5288,
+     0.2198,
+     0.2515
+    ],
+    "over25": 0.6033
+   },
+   "bookmaker": {
+    "result": [
+     0.532,
+     0.2401,
+     0.2278
+    ],
+    "over25": 0.5995
+   }
+  },
+  {
+   "league": "SC3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Dumbarton",
+   "away": "Stirling",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3984,
+     0.2709,
+     0.3307
+    ],
+    "over25": 0.5217
+   },
+   "stats_market": {
+    "result": [
+     0.3657,
+     0.2522,
+     0.3821
+    ],
+    "over25": 0.6233
+   },
+   "bookmaker": {
+    "result": [
+     0.3908,
+     0.2497,
+     0.3595
+    ],
+    "over25": 0.6087
+   }
+  },
+  {
+   "league": "SC3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Elgin",
+   "away": "Edinburgh City",
+   "established": true,
+   "stats": {
+    "result": [
+     0.52,
+     0.2368,
+     0.2432
+    ],
+    "over25": 0.573
+   },
+   "stats_market": {
+    "result": [
+     0.4508,
+     0.2418,
+     0.3074
+    ],
+    "over25": 0.5944
+   },
+   "bookmaker": {
+    "result": [
+     0.4293,
+     0.2576,
+     0.3131
+    ],
+    "over25": 0.5897
+   }
+  },
+  {
+   "league": "SC3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Kelty Hearts",
+   "away": "Forfar",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4583,
+     0.2555,
+     0.2862
+    ],
+    "over25": 0.5472
+   },
+   "stats_market": {
+    "result": [
+     0.4547,
+     0.2494,
+     0.2959
+    ],
+    "over25": 0.5247
+   },
+   "bookmaker": {
+    "result": [
+     0.454,
+     0.2604,
+     0.2856
+    ],
+    "over25": 0.5197
+   }
+  },
+  {
+   "league": "SC3",
+   "date": "2026-10-17",
+   "time": "15:00",
+   "home": "Spartans",
+   "away": "Stranraer",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3785,
+     0.2737,
+     0.3478
+    ],
+    "over25": 0.5751
+   },
+   "stats_market": {
+    "result": [
+     0.4696,
+     0.2491,
+     0.2813
+    ],
+    "over25": 0.6149
+   },
+   "bookmaker": {
+    "result": [
+     0.4293,
+     0.2576,
+     0.3131
+    ],
+    "over25": 0.5897
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-17",
+   "time": "13:00",
+   "home": "Espanol",
+   "away": "Ath Madrid",
+   "established": true,
+   "stats": {
+    "result": [
+     0.236,
+     0.2555,
+     0.5085
+    ],
+    "over25": 0.5902
+   },
+   "stats_market": {
+    "result": [
+     0.1949,
+     0.2445,
+     0.5606
+    ],
+    "over25": 0.5056
+   },
+   "bookmaker": {
+    "result": [
+     0.1926,
+     0.2408,
+     0.5666
+    ],
+    "over25": 0.5259
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-17",
+   "time": "15:15",
+   "home": "Villarreal",
+   "away": "Elche",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6638,
+     0.1889,
+     0.1472
+    ],
+    "over25": 0.5832
+   },
+   "stats_market": {
+    "result": [
+     0.6876,
+     0.1619,
+     0.1506
+    ],
+    "over25": 0.6328
+   },
+   "bookmaker": {
+    "result": [
+     0.6529,
+     0.1893,
+     0.1578
+    ],
+    "over25": 0.6563
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-17",
+   "time": "17:30",
+   "home": "Betis",
+   "away": "Barcelona",
+   "established": true,
+   "stats": {
+    "result": [
+     0.1522,
+     0.1661,
+     0.6817
+    ],
+    "over25": 0.6808
+   },
+   "stats_market": {
+    "result": [
+     0.1511,
+     0.155,
+     0.6939
+    ],
+    "over25": 0.6813
+   },
+   "bookmaker": {
+    "result": [
+     0.1653,
+     0.1653,
+     0.6694
+    ],
+    "over25": 0.7619
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-17",
+   "time": "20:00",
+   "home": "Valencia",
+   "away": "Ath Bilbao",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3166,
+     0.2868,
+     0.3965
+    ],
+    "over25": 0.4319
+   },
+   "stats_market": {
+    "result": [
+     0.2356,
+     0.2822,
+     0.4822
+    ],
+    "over25": 0.4386
+   },
+   "bookmaker": {
+    "result": [
+     0.2797,
+     0.2881,
+     0.4322
+    ],
+    "over25": 0.4517
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-17",
+   "time": "13:00",
+   "home": "Sociedad B",
+   "away": "Almeria",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2719,
+     0.2582,
+     0.4699
+    ],
+    "over25": 0.5147
+   },
+   "stats_market": {
+    "result": [
+     0.242,
+     0.2745,
+     0.4835
+    ],
+    "over25": 0.5784
+   },
+   "bookmaker": {
+    "result": [
+     0.2733,
+     0.2733,
+     0.4533
+    ],
+    "over25": 0.5459
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-17",
+   "time": "15:15",
+   "home": "Eibar",
+   "away": "Mallorca",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3845,
+     0.3176,
+     0.2979
+    ],
+    "over25": 0.4366
+   },
+   "stats_market": {
+    "result": [
+     0.3308,
+     0.3161,
+     0.3531
+    ],
+    "over25": 0.3639
+   },
+   "bookmaker": {
+    "result": [
+     0.3797,
+     0.2819,
+     0.3383
+    ],
+    "over25": 0.4372
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-17",
+   "time": "17:30",
+   "home": "Sp Gijon",
+   "away": "Albacete",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4947,
+     0.3067,
+     0.1986
+    ],
+    "over25": 0.4385
+   },
+   "stats_market": {
+    "result": [
+     0.4868,
+     0.2684,
+     0.2448
+    ],
+    "over25": 0.5175
+   },
+   "bookmaker": {
+    "result": [
+     0.4913,
+     0.2681,
+     0.2406
+    ],
+    "over25": 0.5066
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-17",
+   "time": "20:00",
+   "home": "Las Palmas",
+   "away": "Castellon",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3243,
+     0.3075,
+     0.3682
+    ],
+    "over25": 0.4478
+   },
+   "stats_market": {
+    "result": [
+     0.2501,
+     0.2461,
+     0.5038
+    ],
+    "over25": 0.6008
+   },
+   "bookmaker": {
+    "result": [
+     0.2606,
+     0.2606,
+     0.4787
+    ],
+    "over25": 0.5628
+   }
+  },
+  {
+   "league": "T1",
+   "date": "2026-10-17",
+   "time": "11:30",
+   "home": "Erzurumspor",
+   "away": "Eyupspor",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5663,
+     0.2398,
+     0.194
+    ],
+    "over25": 0.4842
+   },
+   "stats_market": {
+    "result": [
+     0.5867,
+     0.2423,
+     0.171
+    ],
+    "over25": 0.4643
+   },
+   "bookmaker": {
+    "result": [
+     0.5824,
+     0.2524,
+     0.1652
+    ],
+    "over25": 0.4605
+   }
+  },
+  {
+   "league": "T1",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "home": "Amedspor",
+   "away": "Konyaspor",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6009,
+     0.2321,
+     0.167
+    ],
+    "over25": 0.5762
+   },
+   "stats_market": {
+    "result": [
+     0.5161,
+     0.2887,
+     0.1952
+    ],
+    "over25": 0.48
+   },
+   "bookmaker": {
+    "result": [
+     0.5136,
+     0.2659,
+     0.2205
+    ],
+    "over25": 0.4934
+   }
+  },
+  {
+   "league": "T1",
+   "date": "2026-10-17",
+   "time": "14:00",
+   "home": "Genclerbirligi",
+   "away": "Galatasaray",
+   "established": true,
+   "stats": {
+    "result": [
+     0.1206,
+     0.1452,
+     0.7342
+    ],
+    "over25": 0.6673
+   },
+   "stats_market": {
+    "result": [
+     0.1035,
+     0.1283,
+     0.7682
+    ],
+    "over25": 0.682
+   },
+   "bookmaker": {
+    "result": [
+     0.12,
+     0.1714,
+     0.7086
+    ],
+    "over25": 0.6373
+   }
+  },
+  {
+   "league": "T1",
+   "date": "2026-10-17",
+   "time": "17:00",
+   "home": "Fenerbahce",
+   "away": "Alanyaspor",
+   "established": true,
+   "stats": {
+    "result": [
+     0.7448,
+     0.1537,
+     0.1015
+    ],
+    "over25": 0.7084
+   },
+   "stats_market": {
+    "result": [
+     0.736,
+     0.1708,
+     0.0932
+    ],
+    "over25": 0.7103
+   },
+   "bookmaker": {
+    "result": [
+     0.7158,
+     0.1789,
+     0.1053
+    ],
+    "over25": 0.6107
+   }
+  },
+  {
+   "league": "D1",
+   "date": "2026-10-18",
+   "time": "14:30",
+   "home": "Leverkusen",
+   "away": "Freiburg",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6105,
+     0.2115,
+     0.178
+    ],
+    "over25": 0.6751
+   },
+   "stats_market": {
+    "result": [
+     0.5891,
+     0.2027,
+     0.2082
+    ],
+    "over25": 0.6494
+   },
+   "bookmaker": {
+    "result": [
+     0.5483,
+     0.2258,
+     0.2258
+    ],
+    "over25": 0.6368
+   }
+  },
+  {
+   "league": "D1",
+   "date": "2026-10-18",
+   "time": "16:30",
+   "home": "M'gladbach",
+   "away": "Hoffenheim",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3427,
+     0.2823,
+     0.375
+    ],
+    "over25": 0.6283
+   },
+   "stats_market": {
+    "result": [
+     0.3255,
+     0.2789,
+     0.3956
+    ],
+    "over25": 0.6556
+   },
+   "bookmaker": {
+    "result": [
+     0.3042,
+     0.2358,
+     0.46
+    ],
+    "over25": 0.6818
+   }
+  },
+  {
+   "league": "D2",
+   "date": "2026-10-18",
+   "time": "12:30",
+   "home": "Bielefeld",
+   "away": "Osnabruck",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5376,
+     0.2452,
+     0.2171
+    ],
+    "over25": 0.5765
+   },
+   "stats_market": {
+    "result": [
+     0.5357,
+     0.255,
+     0.2093
+    ],
+    "over25": 0.6204
+   },
+   "bookmaker": {
+    "result": [
+     0.5399,
+     0.2415,
+     0.2185
+    ],
+    "over25": 0.5995
+   }
+  },
+  {
+   "league": "D2",
+   "date": "2026-10-18",
+   "time": "12:30",
+   "home": "Dresden",
+   "away": "Magdeburg",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3281,
+     0.2966,
+     0.3753
+    ],
+    "over25": 0.591
+   },
+   "stats_market": {
+    "result": [
+     0.3788,
+     0.2687,
+     0.3525
+    ],
+    "over25": 0.6416
+   },
+   "bookmaker": {
+    "result": [
+     0.3786,
+     0.2577,
+     0.3637
+    ],
+    "over25": 0.6107
+   }
+  },
+  {
+   "league": "D2",
+   "date": "2026-10-18",
+   "time": "12:30",
+   "home": "Karlsruhe",
+   "away": "Darmstadt",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4116,
+     0.3069,
+     0.2815
+    ],
+    "over25": 0.586
+   },
+   "stats_market": {
+    "result": [
+     0.4289,
+     0.2683,
+     0.3029
+    ],
+    "over25": 0.6249
+   },
+   "bookmaker": {
+    "result": [
+     0.4215,
+     0.2473,
+     0.3312
+    ],
+    "over25": 0.6522
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-18",
+   "time": "14:00",
+   "home": "Bournemouth",
+   "away": "Sunderland",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5191,
+     0.2581,
+     0.2228
+    ],
+    "over25": 0.4983
+   },
+   "stats_market": {
+    "result": [
+     0.4461,
+     0.2864,
+     0.2675
+    ],
+    "over25": 0.4932
+   },
+   "bookmaker": {
+    "result": [
+     0.464,
+     0.2718,
+     0.2642
+    ],
+    "over25": 0.5259
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-18",
+   "time": "14:00",
+   "home": "Brighton",
+   "away": "Crystal Palace",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6785,
+     0.1904,
+     0.1311
+    ],
+    "over25": 0.5819
+   },
+   "stats_market": {
+    "result": [
+     0.6252,
+     0.1953,
+     0.1795
+    ],
+    "over25": 0.6173
+   },
+   "bookmaker": {
+    "result": [
+     0.618,
+     0.2101,
+     0.1719
+    ],
+    "over25": 0.6025
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-18",
+   "time": "14:00",
+   "home": "Leeds",
+   "away": "Man United",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3024,
+     0.2803,
+     0.4173
+    ],
+    "over25": 0.6007
+   },
+   "stats_market": {
+    "result": [
+     0.3907,
+     0.2851,
+     0.3242
+    ],
+    "over25": 0.6013
+   },
+   "bookmaker": {
+    "result": [
+     0.406,
+     0.265,
+     0.329
+    ],
+    "over25": 0.5685
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-18",
+   "time": "16:30",
+   "home": "Nott'm Forest",
+   "away": "Arsenal",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2147,
+     0.2536,
+     0.5317
+    ],
+    "over25": 0.5094
+   },
+   "stats_market": {
+    "result": [
+     0.1429,
+     0.2586,
+     0.5985
+    ],
+    "over25": 0.5201
+   },
+   "bookmaker": {
+    "result": [
+     0.159,
+     0.2446,
+     0.5963
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "F1",
+   "date": "2026-10-18",
+   "time": "14:00",
+   "home": "Angers",
+   "away": "Marseille",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3369,
+     0.2685,
+     0.3945
+    ],
+    "over25": 0.4982
+   },
+   "stats_market": {
+    "result": [
+     0.2681,
+     0.2731,
+     0.4588
+    ],
+    "over25": 0.5938
+   },
+   "bookmaker": {
+    "result": [
+     0.2875,
+     0.2497,
+     0.4628
+    ],
+    "over25": 0.5867
+   }
+  },
+  {
+   "league": "F1",
+   "date": "2026-10-18",
+   "time": "16:15",
+   "home": "Le Havre",
+   "away": "Auxerre",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4411,
+     0.2876,
+     0.2714
+    ],
+    "over25": 0.4883
+   },
+   "stats_market": {
+    "result": [
+     0.4262,
+     0.2854,
+     0.2884
+    ],
+    "over25": 0.4787
+   },
+   "bookmaker": {
+    "result": [
+     0.4229,
+     0.2798,
+     0.2973
+    ],
+    "over25": 0.513
+   }
+  },
+  {
+   "league": "F1",
+   "date": "2026-10-18",
+   "time": "16:15",
+   "home": "Lorient",
+   "away": "Monaco",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2849,
+     0.2907,
+     0.4244
+    ],
+    "over25": 0.4843
+   },
+   "stats_market": {
+    "result": [
+     0.2356,
+     0.2799,
+     0.4845
+    ],
+    "over25": 0.5063
+   },
+   "bookmaker": {
+    "result": [
+     0.2642,
+     0.2718,
+     0.464
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "F1",
+   "date": "2026-10-18",
+   "time": "16:15",
+   "home": "Paris FC",
+   "away": "Rennes",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4048,
+     0.2955,
+     0.2997
+    ],
+    "over25": 0.5808
+   },
+   "stats_market": {
+    "result": [
+     0.446,
+     0.2769,
+     0.2771
+    ],
+    "over25": 0.5979
+   },
+   "bookmaker": {
+    "result": [
+     0.4211,
+     0.2632,
+     0.3158
+    ],
+    "over25": 0.5685
+   }
+  },
+  {
+   "league": "F1",
+   "date": "2026-10-18",
+   "time": "19:45",
+   "home": "Lyon",
+   "away": "Nice",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6105,
+     0.2204,
+     0.1691
+    ],
+    "over25": 0.5508
+   },
+   "stats_market": {
+    "result": [
+     0.5797,
+     0.2025,
+     0.2178
+    ],
+    "over25": 0.6074
+   },
+   "bookmaker": {
+    "result": [
+     0.5685,
+     0.2316,
+     0.1999
+    ],
+    "over25": 0.5867
+   }
+  },
+  {
+   "league": "G1",
+   "date": "2026-10-18",
+   "time": "14:00",
+   "home": "Kalamata",
+   "away": "OFI Crete",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4339,
+     0.2799,
+     0.2862
+    ],
+    "over25": 0.4755
+   },
+   "stats_market": {
+    "result": [
+     0.2909,
+     0.3038,
+     0.4052
+    ],
+    "over25": 0.4929
+   },
+   "bookmaker": {
+    "result": [
+     0.3423,
+     0.2981,
+     0.3596
+    ],
+    "over25": 0.4605
+   }
+  },
+  {
+   "league": "G1",
+   "date": "2026-10-18",
+   "time": "15:00",
+   "home": "Panetolikos",
+   "away": "Olympiakos",
+   "established": true,
+   "stats": {
+    "result": [
+     0.1037,
+     0.2585,
+     0.6378
+    ],
+    "over25": 0.4112
+   },
+   "stats_market": {
+    "result": [
+     0.0945,
+     0.2093,
+     0.6962
+    ],
+    "over25": 0.4977
+   },
+   "bookmaker": {
+    "result": [
+     0.0926,
+     0.195,
+     0.7124
+    ],
+    "over25": 0.5263
+   }
+  },
+  {
+   "league": "G1",
+   "date": "2026-10-18",
+   "time": "15:30",
+   "home": "Panathinaikos",
+   "away": "Asteras Tripolis",
+   "established": true,
+   "stats": {
+    "result": [
+     0.7698,
+     0.151,
+     0.0791
+    ],
+    "over25": 0.574
+   },
+   "stats_market": {
+    "result": [
+     0.7913,
+     0.1456,
+     0.0631
+    ],
+    "over25": 0.627
+   },
+   "bookmaker": {
+    "result": [
+     0.7556,
+     0.1676,
+     0.0768
+    ],
+    "over25": 0.5714
+   }
+  },
+  {
+   "league": "G1",
+   "date": "2026-10-18",
+   "time": "18:00",
+   "home": "Kifisia",
+   "away": "Aris",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2695,
+     0.3339,
+     0.3966
+    ],
+    "over25": 0.4548
+   },
+   "stats_market": {
+    "result": [
+     0.3136,
+     0.2879,
+     0.3985
+    ],
+    "over25": 0.4871
+   },
+   "bookmaker": {
+    "result": [
+     0.3112,
+     0.2829,
+     0.4059
+    ],
+    "over25": 0.4672
+   }
+  },
+  {
+   "league": "G1",
+   "date": "2026-10-18",
+   "time": "19:00",
+   "home": "PAOK",
+   "away": "Iraklis",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6693,
+     0.1902,
+     0.1404
+    ],
+    "over25": 0.551
+   },
+   "stats_market": {
+    "result": [
+     0.7831,
+     0.123,
+     0.0939
+    ],
+    "over25": 0.7052
+   },
+   "bookmaker": {
+    "result": [
+     0.7545,
+     0.1534,
+     0.0921
+    ],
+    "over25": 0.5995
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-18",
+   "time": "11:30",
+   "home": "Udinese",
+   "away": "Lecce",
+   "established": true,
+   "stats": {
+    "result": [
+     0.476,
+     0.2886,
+     0.2353
+    ],
+    "over25": 0.4886
+   },
+   "stats_market": {
+    "result": [
+     0.4861,
+     0.3032,
+     0.2107
+    ],
+    "over25": 0.47
+   },
+   "bookmaker": {
+    "result": [
+     0.5113,
+     0.2703,
+     0.2185
+    ],
+    "over25": 0.4675
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-18",
+   "time": "14:00",
+   "home": "Fiorentina",
+   "away": "Como",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2098,
+     0.2353,
+     0.5549
+    ],
+    "over25": 0.5311
+   },
+   "stats_market": {
+    "result": [
+     0.2419,
+     0.2652,
+     0.4929
+    ],
+    "over25": 0.5955
+   },
+   "bookmaker": {
+    "result": [
+     0.2718,
+     0.2642,
+     0.464
+    ],
+    "over25": 0.5685
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-18",
+   "time": "17:00",
+   "home": "Milan",
+   "away": "Atalanta",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4927,
+     0.2893,
+     0.218
+    ],
+    "over25": 0.4934
+   },
+   "stats_market": {
+    "result": [
+     0.5549,
+     0.2516,
+     0.1935
+    ],
+    "over25": 0.5896
+   },
+   "bookmaker": {
+    "result": [
+     0.5275,
+     0.2532,
+     0.2193
+    ],
+    "over25": 0.5483
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-18",
+   "time": "19:45",
+   "home": "Juventus",
+   "away": "Lazio",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6076,
+     0.2522,
+     0.1403
+    ],
+    "over25": 0.5837
+   },
+   "stats_market": {
+    "result": [
+     0.5991,
+     0.2354,
+     0.1656
+    ],
+    "over25": 0.512
+   },
+   "bookmaker": {
+    "result": [
+     0.569,
+     0.25,
+     0.181
+    ],
+    "over25": 0.487
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-18",
+   "time": "14:00",
+   "home": "Juve Stabia",
+   "away": "Sudtirol",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3888,
+     0.3685,
+     0.2427
+    ],
+    "over25": 0.4136
+   },
+   "stats_market": {
+    "result": [
+     0.4149,
+     0.3299,
+     0.2552
+    ],
+    "over25": 0.4679
+   },
+   "bookmaker": {
+    "result": [
+     0.4357,
+     0.2952,
+     0.2691
+    ],
+    "over25": 0.4605
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-18",
+   "time": "16:15",
+   "home": "Cesena",
+   "away": "Avellino",
+   "established": true,
+   "stats": {
+    "result": [
+     0.448,
+     0.308,
+     0.244
+    ],
+    "over25": 0.4641
+   },
+   "stats_market": {
+    "result": [
+     0.4132,
+     0.3301,
+     0.2566
+    ],
+    "over25": 0.4817
+   },
+   "bookmaker": {
+    "result": [
+     0.4211,
+     0.2895,
+     0.2895
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "I2",
+   "date": "2026-10-18",
+   "time": "18:30",
+   "home": "Sampdoria",
+   "away": "Arezzo",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3956,
+     0.3479,
+     0.2566
+    ],
+    "over25": 0.3935
+   },
+   "stats_market": {
+    "result": [
+     0.5203,
+     0.2888,
+     0.191
+    ],
+    "over25": 0.4855
+   },
+   "bookmaker": {
+    "result": [
+     0.5368,
+     0.27,
+     0.1932
+    ],
+    "over25": 0.4737
+   }
+  },
+  {
+   "league": "N1",
+   "date": "2026-10-18",
+   "time": "11:15",
+   "home": "Zwolle",
+   "away": "Go Ahead Eagles",
+   "established": true,
+   "stats": {
+    "result": [
+     0.2674,
+     0.2331,
+     0.4995
+    ],
+    "over25": 0.6089
+   },
+   "stats_market": {
+    "result": [
+     0.2669,
+     0.2898,
+     0.4433
+    ],
+    "over25": 0.6419
+   },
+   "bookmaker": {
+    "result": [
+     0.2708,
+     0.2431,
+     0.4861
+    ],
+    "over25": 0.6522
+   }
+  },
+  {
+   "league": "N1",
+   "date": "2026-10-18",
+   "time": "13:30",
+   "home": "Cambuur",
+   "away": "AZ Alkmaar",
+   "established": true,
+   "stats": {
+    "result": [
+     0.164,
+     0.205,
+     0.631
+    ],
+    "over25": 0.6853
+   },
+   "stats_market": {
+    "result": [
+     0.1257,
+     0.182,
+     0.6923
+    ],
+    "over25": 0.6438
+   },
+   "bookmaker": {
+    "result": [
+     0.1583,
+     0.2,
+     0.6417
+    ],
+    "over25": 0.6951
+   }
+  },
+  {
+   "league": "N1",
+   "date": "2026-10-18",
+   "time": "15:45",
+   "home": "Groningen",
+   "away": "Ajax",
+   "established": true,
+   "stats": {
+    "result": [
+     0.262,
+     0.3205,
+     0.4175
+    ],
+    "over25": 0.6316
+   },
+   "stats_market": {
+    "result": [
+     0.2594,
+     0.2844,
+     0.4563
+    ],
+    "over25": 0.6562
+   },
+   "bookmaker": {
+    "result": [
+     0.2642,
+     0.2378,
+     0.498
+    ],
+    "over25": 0.6951
+   }
+  },
+  {
+   "league": "N1",
+   "date": "2026-10-18",
+   "time": "19:00",
+   "home": "Nijmegen",
+   "away": "For Sittard",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5969,
+     0.2382,
+     0.1649
+    ],
+    "over25": 0.5847
+   },
+   "stats_market": {
+    "result": [
+     0.5658,
+     0.261,
+     0.1732
+    ],
+    "over25": 0.6561
+   },
+   "bookmaker": {
+    "result": [
+     0.5889,
+     0.2203,
+     0.1908
+    ],
+    "over25": 0.6729
+   }
+  },
+  {
+   "league": "N1",
+   "date": "2026-10-18",
+   "time": "19:00",
+   "home": "Twente",
+   "away": "Utrecht",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6839,
+     0.2031,
+     0.1129
+    ],
+    "over25": 0.6663
+   },
+   "stats_market": {
+    "result": [
+     0.7053,
+     0.2057,
+     0.089
+    ],
+    "over25": 0.6478
+   },
+   "bookmaker": {
+    "result": [
+     0.7152,
+     0.1729,
+     0.1119
+    ],
+    "over25": 0.7188
+   }
+  },
+  {
+   "league": "SC0",
+   "date": "2026-10-18",
+   "time": "15:00",
+   "home": "Celtic",
+   "away": "Hearts",
+   "established": true,
+   "stats": {
+    "result": [
+     0.6429,
+     0.1739,
+     0.1831
+    ],
+    "over25": 0.5742
+   },
+   "stats_market": {
+    "result": [
+     0.6328,
+     0.1862,
+     0.181
+    ],
+    "over25": 0.6384
+   },
+   "bookmaker": {
+    "result": [
+     0.6075,
+     0.2066,
+     0.1859
+    ],
+    "over25": 0.6203
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-18",
+   "time": "13:00",
+   "home": "Osasuna",
+   "away": "Santander",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4139,
+     0.2861,
+     0.3
+    ],
+    "over25": 0.5246
+   },
+   "stats_market": {
+    "result": [
+     0.4877,
+     0.2705,
+     0.2417
+    ],
+    "over25": 0.6162
+   },
+   "bookmaker": {
+    "result": [
+     0.4771,
+     0.265,
+     0.2579
+    ],
+    "over25": 0.5685
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-18",
+   "time": "15:15",
+   "home": "Celta",
+   "away": "Alaves",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4352,
+     0.3264,
+     0.2384
+    ],
+    "over25": 0.4453
+   },
+   "stats_market": {
+    "result": [
+     0.4441,
+     0.3266,
+     0.2293
+    ],
+    "over25": 0.4321
+   },
+   "bookmaker": {
+    "result": [
+     0.4509,
+     0.2785,
+     0.2706
+    ],
+    "over25": 0.4315
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-18",
+   "time": "17:30",
+   "home": "Malaga",
+   "away": "Sociedad",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3716,
+     0.2704,
+     0.3579
+    ],
+    "over25": 0.4915
+   },
+   "stats_market": {
+    "result": [
+     0.267,
+     0.2632,
+     0.4697
+    ],
+    "over25": 0.4841
+   },
+   "bookmaker": {
+    "result": [
+     0.2875,
+     0.2711,
+     0.4413
+    ],
+    "over25": 0.5263
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-18",
+   "time": "20:00",
+   "home": "Real Madrid",
+   "away": "Sevilla",
+   "established": true,
+   "stats": {
+    "result": [
+     0.7576,
+     0.1405,
+     0.1018
+    ],
+    "over25": 0.6541
+   },
+   "stats_market": {
+    "result": [
+     0.7737,
+     0.1379,
+     0.0884
+    ],
+    "over25": 0.6492
+   },
+   "bookmaker": {
+    "result": [
+     0.7633,
+     0.1363,
+     0.1004
+    ],
+    "over25": 0.6818
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-18",
+   "time": "13:00",
+   "home": "Ceuta",
+   "away": "Oviedo",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3659,
+     0.3124,
+     0.3217
+    ],
+    "over25": 0.4442
+   },
+   "stats_market": {
+    "result": [
+     0.3227,
+     0.2803,
+     0.397
+    ],
+    "over25": 0.4705
+   },
+   "bookmaker": {
+    "result": [
+     0.3095,
+     0.2902,
+     0.4003
+    ],
+    "over25": 0.4541
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-18",
+   "time": "15:15",
+   "home": "Granada",
+   "away": "Cadiz",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5573,
+     0.2626,
+     0.1802
+    ],
+    "over25": 0.4932
+   },
+   "stats_market": {
+    "result": [
+     0.502,
+     0.2837,
+     0.2143
+    ],
+    "over25": 0.5043
+   },
+   "bookmaker": {
+    "result": [
+     0.5133,
+     0.2655,
+     0.2212
+    ],
+    "over25": 0.4541
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-18",
+   "time": "17:30",
+   "home": "Girona",
+   "away": "Andorra",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4833,
+     0.2994,
+     0.2173
+    ],
+    "over25": 0.4685
+   },
+   "stats_market": {
+    "result": [
+     0.5811,
+     0.2244,
+     0.1944
+    ],
+    "over25": 0.5977
+   },
+   "bookmaker": {
+    "result": [
+     0.5207,
+     0.2519,
+     0.2273
+    ],
+    "over25": 0.5526
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-18",
+   "time": "17:30",
+   "home": "Valladolid",
+   "away": "Eldense",
+   "established": true,
+   "stats": {
+    "result": [
+     0.432,
+     0.3106,
+     0.2574
+    ],
+    "over25": 0.4691
+   },
+   "stats_market": {
+    "result": [
+     0.5167,
+     0.2675,
+     0.2158
+    ],
+    "over25": 0.4482
+   },
+   "bookmaker": {
+    "result": [
+     0.4984,
+     0.2809,
+     0.2207
+    ],
+    "over25": 0.4605
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-18",
+   "time": "20:00",
+   "home": "Burgos",
+   "away": "Sabadell",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3652,
+     0.3459,
+     0.2889
+    ],
+    "over25": 0.4068
+   },
+   "stats_market": {
+    "result": [
+     0.3492,
+     0.3378,
+     0.3131
+    ],
+    "over25": 0.3597
+   },
+   "bookmaker": {
+    "result": [
+     0.3497,
+     0.3252,
+     0.3252
+    ],
+    "over25": 0.375
+   }
+  },
+  {
+   "league": "T1",
+   "date": "2026-10-18",
+   "time": "11:30",
+   "home": "Kasimpasa",
+   "away": "Samsunspor",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4084,
+     0.3113,
+     0.2803
+    ],
+    "over25": 0.4805
+   },
+   "stats_market": {
+    "result": [
+     0.3515,
+     0.2939,
+     0.3546
+    ],
+    "over25": 0.4768
+   },
+   "bookmaker": {
+    "result": [
+     0.3848,
+     0.274,
+     0.3412
+    ],
+    "over25": 0.4803
+   }
+  },
+  {
+   "league": "T1",
+   "date": "2026-10-18",
+   "time": "14:00",
+   "home": "Kocaelispor",
+   "away": "Goztep",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3463,
+     0.2873,
+     0.3664
+    ],
+    "over25": 0.5885
+   },
+   "stats_market": {
+    "result": [
+     0.3033,
+     0.2876,
+     0.4091
+    ],
+    "over25": 0.5051
+   },
+   "bookmaker": {
+    "result": [
+     0.337,
+     0.2757,
+     0.3872
+    ],
+    "over25": 0.5
+   }
+  },
+  {
+   "league": "T1",
+   "date": "2026-10-18",
+   "time": "17:00",
+   "home": "Buyuksehyr",
+   "away": "Gaziantep",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5528,
+     0.2699,
+     0.1772
+    ],
+    "over25": 0.5466
+   },
+   "stats_market": {
+    "result": [
+     0.6193,
+     0.1898,
+     0.1909
+    ],
+    "over25": 0.6341
+   },
+   "bookmaker": {
+    "result": [
+     0.5648,
+     0.2332,
+     0.2021
+    ],
+    "over25": 0.5897
+   }
+  },
+  {
+   "league": "E0",
+   "date": "2026-10-19",
+   "time": "20:00",
+   "home": "Tottenham",
+   "away": "Coventry",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5336,
+     0.2355,
+     0.2309
+    ],
+    "over25": 0.494
+   },
+   "stats_market": {
+    "result": [
+     0.6263,
+     0.2573,
+     0.1164
+    ],
+    "over25": 0.5967
+   },
+   "bookmaker": {
+    "result": [
+     0.6539,
+     0.2107,
+     0.1354
+    ],
+    "over25": 0.6025
+   }
+  },
+  {
+   "league": "F2",
+   "date": "2026-10-19",
+   "time": "19:45",
+   "home": "Rodez",
+   "away": "Montpellier",
+   "established": true,
+   "stats": {
+    "result": [
+     0.425,
+     0.2816,
+     0.2934
+    ],
+    "over25": 0.5099
+   },
+   "stats_market": {
+    "result": [
+     0.3367,
+     0.2663,
+     0.397
+    ],
+    "over25": 0.6078
+   },
+   "bookmaker": {
+    "result": [
+     0.3372,
+     0.2687,
+     0.3941
+    ],
+    "over25": 0.5628
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-19",
+   "time": "17:30",
+   "home": "Monza",
+   "away": "Cagliari",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3315,
+     0.2689,
+     0.3996
+    ],
+    "over25": 0.5112
+   },
+   "stats_market": {
+    "result": [
+     0.4214,
+     0.2985,
+     0.2802
+    ],
+    "over25": 0.4371
+   },
+   "bookmaker": {
+    "result": [
+     0.3944,
+     0.3028,
+     0.3028
+    ],
+    "over25": 0.4517
+   }
+  },
+  {
+   "league": "I1",
+   "date": "2026-10-19",
+   "time": "19:45",
+   "home": "Parma",
+   "away": "Torino",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3847,
+     0.3183,
+     0.297
+    ],
+    "over25": 0.4558
+   },
+   "stats_market": {
+    "result": [
+     0.2826,
+     0.3418,
+     0.3755
+    ],
+    "over25": 0.4257
+   },
+   "bookmaker": {
+    "result": [
+     0.3063,
+     0.3063,
+     0.3875
+    ],
+    "over25": 0.3975
+   }
+  },
+  {
+   "league": "P1",
+   "date": "2026-10-19",
+   "time": "20:15",
+   "home": "Sp Braga",
+   "away": "Gil Vicente",
+   "established": true,
+   "stats": {
+    "result": [
+     0.5205,
+     0.2834,
+     0.1961
+    ],
+    "over25": 0.41
+   },
+   "stats_market": {
+    "result": [
+     0.585,
+     0.2438,
+     0.1712
+    ],
+    "over25": 0.4795
+   },
+   "bookmaker": {
+    "result": [
+     0.5907,
+     0.249,
+     0.1603
+    ],
+    "over25": 0.4605
+   }
+  },
+  {
+   "league": "SP1",
+   "date": "2026-10-19",
+   "time": "20:00",
+   "home": "Getafe",
+   "away": "Vallecano",
+   "established": true,
+   "stats": {
+    "result": [
+     0.347,
+     0.3021,
+     0.3509
+    ],
+    "over25": 0.4581
+   },
+   "stats_market": {
+    "result": [
+     0.3066,
+     0.3492,
+     0.3443
+    ],
+    "over25": 0.3937
+   },
+   "bookmaker": {
+    "result": [
+     0.3289,
+     0.3179,
+     0.3532
+    ],
+    "over25": 0.3632
+   }
+  },
+  {
+   "league": "SP2",
+   "date": "2026-10-19",
+   "time": "19:30",
+   "home": "Celta B",
+   "away": "Tenerife",
+   "established": true,
+   "stats": {
+    "result": [
+     0.3611,
+     0.3361,
+     0.3028
+    ],
+    "over25": 0.4331
+   },
+   "stats_market": {
+    "result": [
+     0.3367,
+     0.296,
+     0.3673
+    ],
+    "over25": 0.468
+   },
+   "bookmaker": {
+    "result": [
+     0.3596,
+     0.2981,
+     0.3423
+    ],
+    "over25": 0.4605
+   }
+  },
+  {
+   "league": "T1",
+   "date": "2026-10-19",
+   "time": "18:00",
+   "home": "Trabzonspor",
+   "away": "Besiktas",
+   "established": true,
+   "stats": {
+    "result": [
+     0.4265,
+     0.2863,
+     0.2872
+    ],
+    "over25": 0.5957
+   },
+   "stats_market": {
+    "result": [
+     0.3416,
+     0.2385,
+     0.4198
+    ],
+    "over25": 0.6196
+   },
+   "bookmaker": {
+    "result": [
+     0.3263,
+     0.2564,
+     0.4173
+    ],
+    "over25": 0.6107
+   }
+  }
+ ]
+}

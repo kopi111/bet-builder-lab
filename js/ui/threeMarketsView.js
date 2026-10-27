@@ -1,45 +1,53 @@
-// "1X2 · BTTS · O2.5" page: this week's picks in the three core markets, each tagged with how the same
-// kind of pick did in the walk-forward study, followed by the full evidence so the numbers can be checked.
+// "1X2 · BTTS · O2.5" page: this week's best bets (strong picks, good leagues first, best price), then every match's three picks,
+// each tagged with how the same kind of pick did in the walk-forward study. The full evidence sits behind a toggle.
 import { h, replaceContent, table, badge } from '../util/dom.js';
 import { decimalOdds, kickoffText, percent, signedPercent, stampText } from '../util/format.js';
 import { leagueByCode } from '../config.js';
 import { loadFixtures, loadLeagueHistory } from '../data/feeds.js';
 import { LeagueModel } from '../model/leagueModel.js';
-import { THREE_MARKETS, similarPicks, threeMarketPicks } from '../model/threeMarkets.js';
+import { STRONG_HIT_RATE, THREE_MARKETS, isStrong, leagueRating, similarPicks, threeMarketPicks } from '../model/threeMarkets.js';
 import { loadSettings } from '../store/appState.js';
+import { localDateKey } from '../util/time.js';
 import { emptyState, errorPanel, kpi, loadingPanel, probabilityBar, section } from './components.js';
 
 const STUDY_URL = 'data/three-markets-study.json';
+const STAKING_URL = 'data/staking-study.json';
+const STAKE = 20;
+const TICKET_SIZE = 3;
+const LEAGUE_ORDER = { good: 0, neutral: 1, unknown: 1, avoid: 2 };
 const MARKET_NAMES = { result: 'Match result (1X2)', btts: 'Both teams to score', goals: 'Over/Under 2.5 goals' };
-const STRONG_HIT_RATE = 0.6;
 const LARGE_DISAGREEMENT = 0.1;
 const filters = { league: 'all', strongOnly: false };
-let studyPromise;
+const studyFiles = new Map();
 
 export async function renderThreeMarkets(view, parameter, isCurrent) {
   const picksColumn = h('div', {}, loadingPanel('Fitting the model for this week\'s fixtures…'));
   const evidenceColumn = h('details', { class: 'research-toggle' }, h('summary', {}, 'Show the research behind these picks'));
   replaceContent(view, picksColumn, evidenceColumn);
-  const study = await loadStudy().catch((error) => ({ error }));
+  const [study, staking] = await Promise.all([loadStudyFile(STUDY_URL, 'node tools/three-markets-study.mjs'),
+    loadStudyFile(STAKING_URL, 'node tools/strategy-backtest.mjs <file> then python3 tools/staking_study.py <file> data/staking-study.json')]
+    .map((pending) => pending.catch((error) => ({ error }))));
   if (!isCurrent()) return;
-  evidenceColumn.append(...[study.error ? errorPanel(study.error, 'Historical study missing') : evidencePanels(study)].flat());
+  evidenceColumn.append(...[study.error ? errorPanel(study.error, 'Historical study missing') : evidencePanels(study, staking.error ? undefined : staking)].flat());
   try {
     const rows = await weekPicks();
-    if (isCurrent()) drawPicks(picksColumn, rows, study.error ? undefined : study);
+    if (isCurrent()) drawPicks(picksColumn, rows, study.error ? undefined : study, staking.error ? undefined : staking);
   } catch (error) {
     if (isCurrent()) replaceContent(picksColumn, errorPanel(error, 'Fixture feed unavailable'));
   }
 }
 
-function loadStudy() {
-  if (!studyPromise) {
-    studyPromise = fetch(STUDY_URL).then((response) => {
-      if (!response.ok) throw new Error(`${STUDY_URL} not found. Run: node tools/three-markets-study.mjs (with npm start running).`);
+// Study files are fetched once per session; a failed fetch is forgotten so a reload can retry.
+function loadStudyFile(url, howToBuild) {
+  if (!studyFiles.has(url)) {
+    const pending = fetch(url).then((response) => {
+      if (!response.ok) throw new Error(`${url} not found. Run: ${howToBuild} (with npm start running).`);
       return response.json();
     });
-    studyPromise.catch(() => { studyPromise = undefined; });
+    pending.catch(() => studyFiles.delete(url));
+    studyFiles.set(url, pending);
   }
-  return studyPromise;
+  return studyFiles.get(url);
 }
 
 // One model fit per league (as of now), then the three picks for every upcoming fixture in it.
@@ -60,10 +68,12 @@ async function weekPicks() {
   return { fetchedAt: feed.fetchedAt, staleReason: feed.staleReason, rows: perLeague.flat().sort((a, b) => a.fixture.kickoff - b.fixture.kickoff) };
 }
 
-function drawPicks(container, week, study) {
+function drawPicks(container, week, study, staking) {
   const list = h('div', { class: 'three-list' });
-  const redraw = () => replaceContent(list, visibleRows(week.rows, study).map((row) => fixtureRow(row, study)), emptyIfNone(week.rows, study));
+  const redraw = () => replaceContent(list, visibleRows(week.rows, study).map((row) => fixtureRow(row, study, staking)), emptyIfNone(week.rows, study));
   replaceContent(container,
+    study ? todaysPicksPanel(week.rows, study, staking) : '',
+    study ? bestBetsPanel(week.rows, study, staking) : '',
     section('This week: three picks per match', `Model picks for upcoming fixtures in the free feed (updated ${stampText(week.fetchedAt)}). The tag on each pick is how often the same kind of pick won in ${study ? study.matches.toLocaleString() : 'the'} past matches.`,
       week.staleReason ? h('p', { class: 'negative small' }, `Fixture file is a cached copy (${week.staleReason}); some matches may be missing. Reload later.`) : '',
       pickFilters(week.rows, redraw), list));
@@ -96,12 +106,12 @@ function strongestHistory(row, study) {
   return Math.max(...THREE_MARKETS.map((market) => similarPicks(study, market, row.picks[market].probability)?.hitRate || 0));
 }
 
-function fixtureRow(row, study) {
+function fixtureRow(row, study, staking) {
   const { fixture } = row;
   const league = leagueByCode(fixture.league);
   return h('article', { class: 'three-card' },
     h('header', {},
-      h('div', {}, h('strong', {}, `${fixture.home} v ${fixture.away}`), h('small', { class: 'muted' }, ` ${league.country} · ${league.name}`)),
+      h('div', {}, h('strong', {}, `${fixture.home} v ${fixture.away}`), h('small', { class: 'muted' }, ` ${league.country} · ${league.name} `), leagueBadge(staking, fixture.league)),
       h('time', { class: 'muted small', datetime: fixture.kickoff.toISOString() }, kickoffText(fixture.kickoff))),
     row.failed ? h('p', { class: 'negative small' }, `No model for this league: ${row.failed}`)
       : !row.covered ? h('p', { class: 'muted small' }, 'Insufficient evidence: one of these teams has too few league matches in the data (often a promoted side).')
@@ -111,13 +121,132 @@ function fixtureRow(row, study) {
 }
 
 function pickCell(pick, history) {
-  return h('div', { class: 'pick-cell' },
-    h('small', { class: 'muted' }, pick.market),
+  const strong = history && history.hitRate >= STRONG_HIT_RATE;
+  return h('div', { class: `pick-cell${strong ? ' is-strong' : ''}` },
+    h('small', { class: 'muted' }, pick.market, strong ? ' · ★ strong pick' : ''),
     h('strong', {}, pick.label),
     probabilityBar(pick.probability),
-    h('span', { class: 'small mono' }, `Fair ${decimalOdds(pick.fairOdds)} · Bet365 ${decimalOdds(pick.odds)}`),
+    h('span', { class: 'small mono' }, `Fair ${decimalOdds(pick.fairOdds)} · Bet365 ${decimalOdds(pick.odds)} · Best ${decimalOdds(pick.bestOdds)}`),
     valueBadge(pick),
     history ? historyBadge(history) : '');
+}
+
+// League tag from the five-season staking study: how strong picks have paid in this league.
+function leagueBadge(staking, leagueCode) {
+  const { rating, entry } = leagueRating(staking, leagueCode);
+  if (!entry) return '';
+  const record = `strong picks ${signedPercent(entry.bet365.roi)} at Bet365, ${signedPercent(entry.best.roi)} at best price over ${entry.best.bets} bets`;
+  if (rating === 'good') return h('span', { class: 'badge badge-good', title: record }, 'Good league');
+  if (rating === 'avoid') return h('span', { class: 'badge badge-bad', title: record }, 'Weak league');
+  return h('span', { class: 'badge badge-neutral', title: record }, 'Average league');
+}
+
+// ---------- Best bets ----------
+
+// Strong picks with a price, one per match (its most confident), good leagues first, weak leagues left out.
+function bestBetLegs(rows, study, staking) {
+  return rows.filter((row) => row.picks && row.covered).flatMap((row) => {
+    const rating = leagueRating(staking, row.fixture.league).rating;
+    const options = THREE_MARKETS.map((market) => ({ market, pick: row.picks[market] }))
+      .filter(({ market, pick }) => bestPrice(pick) && isStrong(study, market, pick.probability));
+    if (!options.length || rating === 'avoid') return [];
+    const chosen = options.reduce((a, b) => (b.pick.probability > a.pick.probability ? b : a));
+    return [{ row, rating, ...chosen, history: similarPicks(study, chosen.market, chosen.pick.probability) }];
+  }).sort((a, b) => LEAGUE_ORDER[a.rating] - LEAGUE_ORDER[b.rating] || b.pick.probability - a.pick.probability);
+}
+
+function bestPrice(pick) {
+  return Math.max(...[pick.odds, pick.bestOdds].filter(Number.isFinite), 0) || 0;
+}
+
+function bestBetsPanel(rows, study, staking) {
+  const legs = bestBetLegs(rows, study, staking);
+  if (!legs.length) {
+    return section('Best bets this week', '', emptyState('No strong priced picks right now', 'Strong picks with a bookmaker price appear when the weekend fixtures are published (usually mid-week).'));
+  }
+  const tickets = [];
+  for (let i = 0; i + TICKET_SIZE <= legs.length; i += TICKET_SIZE) tickets.push(legs.slice(i, i + TICKET_SIZE));
+  return section('Best bets this week', `Strong picks only (the kind that historically won ${percent(STRONG_HIT_RATE, 0)}+), one per match, good leagues first, weak leagues left out. $${STAKE} per bet; "pays" is the total back at the best price.`,
+    table(['Kick-off', 'Match', 'League', 'Pick', 'Similar picks won', 'Bet365', 'Best price', `$${STAKE} pays`], legs.map((leg) => [
+      kickoffText(leg.row.fixture.kickoff),
+      h('a', { href: `#/match/${encodeURIComponent(leg.row.fixture.id)}` }, `${leg.row.fixture.home} v ${leg.row.fixture.away}`),
+      leagueBadge(staking, leg.row.fixture.league),
+      leg.pick.label,
+      percent(leg.history.hitRate, 0),
+      decimalOdds(leg.pick.odds),
+      h('strong', {}, decimalOdds(leg.pick.bestOdds)),
+      `$${(STAKE * bestPrice(leg.pick)).toFixed(2)}`
+    ])),
+    tickets.length ? h('div', {}, h('h3', {}, `Suggested ${TICKET_SIZE}-match tickets`), table(['Ticket', 'Legs', 'Combined best odds', `$${STAKE} pays`, 'Chance all win'], tickets.map((ticket, index) => [
+      `Ticket ${index + 1}`,
+      ticket.map((leg) => `${leg.pick.label} (${leg.row.fixture.home} v ${leg.row.fixture.away})`).join(' · '),
+      decimalOdds(ticket.reduce((odds, leg) => odds * bestPrice(leg.pick), 1)),
+      `$${(STAKE * ticket.reduce((odds, leg) => odds * bestPrice(leg.pick), 1)).toFixed(2)}`,
+      percent(ticket.reduce((chance, leg) => chance * leg.history.hitRate, 1), 0)
+    ]))) : '',
+    staking ? expectationNote(staking) : '');
+}
+
+// ---------- Today's picks ----------
+
+// Tickets written from the study's rules for the next match day: strong priced picks only, weak leagues out,
+// trebles first (the best-performing ticket size), a double or single for whatever is left over.
+function todaysPicksPanel(rows, study, staking) {
+  const day = nextMatchDay(rows);
+  const legs = day ? bestBetLegs(rows.filter((row) => localDateKey(row.fixture.kickoff) === day), study, staking) : [];
+  const heading = day === localDateKey(new Date()) ? 'Today\'s picks' : `Next match day's picks (${day ? new Date(`${day}T12:00:00`).toDateString() : 'none'})`;
+  if (!legs.length) {
+    return section(heading, 'Written from the model and the five-season study.',
+      emptyState('No ticket today', 'None of the remaining matches has a strong pick with a price in a league where strong picks have held up. Not betting is the pick.'));
+  }
+  const tickets = writeTickets(legs);
+  return section(heading, `Written from the model and the five-season study: strong picks only (historically won ${percent(STRONG_HIT_RATE, 0)}+), one per match, weak leagues left out, best price. $${STAKE} per ticket.`,
+    tickets.map((ticket, index) => writtenTicket(ticket, index + 1, staking)),
+    h('p', { class: 'muted small' }, 'Every selection shows what it pays as a $20 single, so you can play the singles instead of the ticket. Over five seasons, strong singles and trebles at the best price came out about even; at Bet365 they lost 3–7%. Check team news before kick-off.'));
+}
+
+function nextMatchDay(rows) {
+  const days = rows.filter((row) => row.fixture.kickoff > new Date()).map((row) => localDateKey(row.fixture.kickoff)).sort();
+  return days[0];
+}
+
+function writeTickets(legs) {
+  const tickets = [];
+  let rest = legs;
+  while (rest.length >= TICKET_SIZE) {
+    tickets.push(rest.slice(0, TICKET_SIZE));
+    rest = rest.slice(TICKET_SIZE);
+  }
+  if (rest.length) tickets.push(rest);
+  return tickets;
+}
+
+function writtenTicket(ticket, number, staking) {
+  const odds = ticket.reduce((total, leg) => total * bestPrice(leg.pick), 1);
+  const chance = ticket.reduce((total, leg) => total * leg.history.hitRate, 1);
+  const kind = { 1: 'Single', 2: 'Double', 3: 'Treble' }[ticket.length] || `${ticket.length}-match ticket`;
+  return h('article', { class: 'written-ticket' },
+    h('header', {},
+      h('h3', {}, `Ticket ${number} · ${kind}`),
+      h('div', { class: 'ticket-summary mono' },
+        h('span', {}, `Odds ${decimalOdds(odds)}`),
+        h('strong', {}, `$${STAKE} pays $${(STAKE * odds).toFixed(2)}`),
+        h('span', {}, `Chance ${percent(chance, 0)}${chance < 0.5 ? ` (about 1 in ${Math.round(1 / chance)})` : ''}`))),
+    table(['Kick-off', 'Selection', 'Why', 'Bet365', 'Best price', `$${STAKE} single pays`], ticket.map((leg) => [
+      kickoffText(leg.row.fixture.kickoff),
+      h('div', {}, h('strong', {}, leg.pick.label), h('br'), h('small', { class: 'muted' }, `${leg.row.fixture.home} v ${leg.row.fixture.away}`)),
+      h('div', { class: 'small' }, `Model ${percent(leg.pick.probability, 0)}; similar picks won ${percent(leg.history.hitRate, 0)} of ${leg.history.bets.toLocaleString()} `, leagueBadge(staking, leg.row.fixture.league)),
+      decimalOdds(leg.pick.odds),
+      h('strong', {}, decimalOdds(bestPrice(leg.pick))),
+      h('strong', { class: 'positive' }, `$${(STAKE * bestPrice(leg.pick)).toFixed(2)}`)
+    ])));
+}
+
+function expectationNote(staking) {
+  const find = (source, size) => staking.strategies.find((s) => s.source === source && s.size === size && !s.every);
+  return h('p', { class: 'muted small' },
+    `What to expect, from every weekend of the last five seasons: strong singles returned ${signedPercent(find('best', 1).roi)} at the best price (${signedPercent(find('bet365', 1).roi)} at Bet365) and ${signedPercent(find('best', 3).roi)} as trebles (${signedPercent(find('bet365', 3).roi)} at Bet365). `,
+    `Only ${percent(find('best', 1).profitableWeekends, 0)} of weekends finished in profit. Take the highest price you can get, keep the stake the same, and avoid 5+ match tickets (${signedPercent(find('best', 5).roi)}).`);
 }
 
 function valueBadge(pick) {
@@ -141,9 +270,10 @@ function historyBadge(band) {
 
 // ---------- Evidence ----------
 
-function evidencePanels(study) {
+function evidencePanels(study, staking) {
   return [
     bottomLine(study),
+    ...(staking ? [stakingPanel(staking), leagueStakingPanel(staking)] : []),
     baseRatePanel(study),
     ...THREE_MARKETS.map((market) => marketPanel(study, market)),
     blindPanel(study),
@@ -168,6 +298,28 @@ function bottomLine(study) {
 // Highest-confidence band that still has enough picks to mean something.
 function topBand(bands) {
   return [...bands].reverse().find((band) => band.bets >= 300) || bands[bands.length - 1];
+}
+
+function stakingPanel(staking) {
+  const label = (s) => (s.every ? 'Every pick, singles' : s.size === 1 ? 'Strong singles' : `Strong, ${s.size}-match tickets`);
+  const money = (value) => h('span', { class: `mono ${value >= 0 ? 'positive' : 'negative'}` }, `${value >= 0 ? '+' : '-'}$${Math.abs(value).toFixed(2)}`);
+  const leg = staking.legValue;
+  return section(`Singles or tickets? Every weekend replayed ($${staking.stake} each)`,
+    `${staking.matches.toLocaleString()} matches. A strong pick wins ${percent(leg.bet365.hitRate, 1)}. At Bet365's average odds of ${leg.bet365.averageOdds.toFixed(2)} each bet returns ${signedPercent(leg.bet365.evPerLeg)}; at the best price (${leg.best.averageOdds.toFixed(2)}) it returns ${signedPercent(leg.best.evPerLeg)}. A ticket multiplies its legs, so a small loss per leg grows with every leg added.`,
+    table(['Strategy', 'Price', 'Tickets', 'Won', 'ROI', 'Weekends in profit', 'Average weekend', 'Worst', 'Best'], staking.strategies.map((s) => [
+      label(s), s.source === 'bet365' ? 'Bet365' : 'Best price', s.tickets.toLocaleString(), s.ticketWins.toLocaleString(), roiCell(s.roi),
+      percent(s.profitableWeekends, 0), money(s.averageWeekend), money(s.worstWeekend), money(s.bestWeekend)
+    ])));
+}
+
+function leagueStakingPanel(staking) {
+  return section('Which leagues pay', `Strong picks as singles, by league. "Before" is up to ${staking.unseenFrom}; "Since" is the newest data. Trust a league more when both are positive.`,
+    table(['League', 'Bets', 'Won', 'Bet365', 'Best price', '95% range (best)', 'Before', 'Since', 'Tag'], staking.leagues.map((entry) => [
+      `${leagueByCode(entry.league).country} · ${leagueByCode(entry.league).name}`, entry.best.bets.toLocaleString(), percent(entry.best.hitRate, 0),
+      roiCell(entry.bet365.roi), roiCell(entry.best.roi),
+      entry.best.interval ? h('span', { class: 'mono small' }, `${signedPercent(entry.best.interval[0])} to ${signedPercent(entry.best.interval[1])}`) : '—',
+      roiCell(entry.best.before), roiCell(entry.best.after), leagueBadge(staking, entry.league)
+    ])));
 }
 
 function baseRatePanel(study) {

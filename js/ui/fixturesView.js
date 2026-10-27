@@ -7,7 +7,7 @@ import { analyse, analysisIfReady, customMatchId } from './matchService.js';
 import { isMatchSaved, recentAnalyses, savedMatches, toggleSavedMatch } from '../store/appState.js';
 import { button, buttonLink, emptyState, errorPanel, kpi, loadingPanel, section } from './components.js';
 
-const filters = { league: 'all', search: '', mode: 'upcoming' };
+const filters = { league: 'all', search: '', mode: 'upcoming', day: 'today' };
 
 export async function renderFixtures(view, parameter, isCurrent) {
   const layout = h('div', { class: 'dashboard' });
@@ -57,6 +57,15 @@ function filterBar(feed, redraw) {
     filters.search = search.value.trim().toLowerCase();
     redraw();
   });
+  const daySelect = h('select', { 'aria-label': 'Day' },
+    h('option', { value: 'today', selected: filters.day === 'today' }, 'Today'),
+    [...new Set(feed.fixtures.map((f) => localDateKey(f.kickoff)))].sort().map((day) =>
+      h('option', { value: day, selected: filters.day === day }, dayHeading(new Date(`${day}T12:00:00`)))),
+    h('option', { value: 'all', selected: filters.day === 'all' }, 'All days this week'));
+  daySelect.addEventListener('change', () => {
+    filters.day = daySelect.value;
+    redraw();
+  });
   const modeSelect = h('select', { 'aria-label': 'Show' },
     h('option', { value: 'upcoming', selected: filters.mode === 'upcoming' }, 'This week\'s fixtures'),
     h('option', { value: 'results', selected: filters.mode === 'results' }, 'Recent results (replay as of kick-off)'));
@@ -73,7 +82,7 @@ function filterBar(feed, redraw) {
           redraw();
           document.querySelectorAll('.chip').forEach((chip) => chip.classList.toggle('is-active', chip.textContent === name));
         } }, name))),
-    h('div', { class: 'filter-controls' }, leagueSelect, search, modeSelect),
+    h('div', { class: 'filter-controls' }, daySelect, leagueSelect, search, modeSelect),
     h('p', { class: 'muted small' }, `Kick-off times shown in your timezone (${userTimezone}). Odds are Bet365 prices published by football-data.co.uk when the file was built; they move, so check the current price.`),
     (feed.notes || []).map((note) => h('p', { class: 'muted small' }, note)));
 }
@@ -82,7 +91,8 @@ async function drawFixtureList(container, feed) {
   if (filters.mode === 'results') return drawResults(container);
   const fixtures = feed.fixtures.filter(matchesFilters);
   if (fixtures.length === 0) {
-    replaceContent(container, emptyState('No fixtures match', 'The free feed lists the current week only. New fixtures usually appear mid-week. Use the custom match-up below, or switch to recent results.'));
+    const message = filters.day === 'today' ? 'No fixtures left in the feed for today. Pick another day above, or "All days this week".' : 'The free feed lists the current week only. New fixtures usually appear mid-week. Use the custom match-up below, or switch to recent results.';
+    replaceContent(container, emptyState('No fixtures match', message));
     return;
   }
   const leaguesShown = [...new Set(fixtures.map((f) => f.league))];
@@ -95,8 +105,15 @@ async function drawFixtureList(container, feed) {
 
 function matchesFilters(fixture) {
   if (filters.league !== 'all' && fixture.league !== filters.league) return false;
+  if (filters.mode === 'upcoming' && !onChosenDay(fixture)) return false;
   if (!filters.search) return true;
   return fixture.home.toLowerCase().includes(filters.search) || fixture.away.toLowerCase().includes(filters.search);
+}
+
+function onChosenDay(fixture) {
+  if (filters.day === 'all') return true;
+  const day = filters.day === 'today' ? localDateKey(new Date()) : filters.day;
+  return localDateKey(fixture.kickoff) === day;
 }
 
 function groupByDay(fixtures) {

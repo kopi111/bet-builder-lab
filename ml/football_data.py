@@ -12,10 +12,12 @@ LEAGUE_CODES = ['E0', 'E1', 'E2', 'E3', 'SP1', 'SP2', 'I1', 'I2', 'D1', 'D2', 'F
                 'N1', 'P1', 'B1', 'T1', 'G1', 'SC0', 'SC1', 'SC2', 'SC3']
 FIRST_SEASON_START_YEAR = 2016
 CURRENT_SEASON_START_YEAR = 2026
+DOWNLOAD_ATTEMPTS = 3
 REQUIRED_COLUMNS = ['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR']
 OPTIONAL_COLUMNS = ['HS', 'AS', 'HST', 'AST', 'HC', 'AC',
                     'B365H', 'B365D', 'B365A', 'B365>2.5', 'B365<2.5',
                     'B365CH', 'B365CD', 'B365CA', 'B365C>2.5', 'B365C<2.5']
+NUMERIC_COLUMNS = ['FTHG', 'FTAG'] + OPTIONAL_COLUMNS
 
 
 def season_code(start_year):
@@ -26,12 +28,28 @@ def all_season_codes():
     return [season_code(year) for year in range(FIRST_SEASON_START_YEAR, CURRENT_SEASON_START_YEAR + 1)]
 
 
+def fetch(relative_url):
+    request = urllib.request.Request(f'{ORIGIN}/{relative_url}', headers={'User-Agent': 'bet-builder-lab'})
+    for attempt in range(DOWNLOAD_ATTEMPTS):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                return response.read()
+        except (TimeoutError, OSError):
+            if attempt == DOWNLOAD_ATTEMPTS - 1:
+                raise
+            time.sleep(2 * (attempt + 1))
+
+
 def download(relative_url, target, always_refresh=False):
     if target.exists() and not always_refresh:
         return target.read_bytes()
-    request = urllib.request.Request(f'{ORIGIN}/{relative_url}', headers={'User-Agent': 'bet-builder-lab'})
-    with urllib.request.urlopen(request, timeout=30) as response:
-        body = response.read()
+    try:
+        body = fetch(relative_url)
+    except OSError as error:
+        if not target.exists():
+            raise
+        print(f'  {relative_url}: {error}; using the cached copy')
+        return target.read_bytes()
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_bytes(body)
     time.sleep(0.3)
@@ -40,11 +58,15 @@ def download(relative_url, target, always_refresh=False):
 
 def parse_csv(body):
     frame = pd.read_csv(io.BytesIO(body), encoding='latin-1', on_bad_lines='skip')
-    frame = frame.loc[:, ~frame.columns.str.startswith('Unnamed')]
+    frame.columns = frame.columns.str.replace('ï»¿', '').str.replace('\ufeff', '').str.strip()
+    frame = frame.loc[:, ~frame.columns.str.startswith('Unnamed')].copy()
     for column in OPTIONAL_COLUMNS:
         if column not in frame.columns:
             frame[column] = float('nan')
-    frame['Date'] = pd.to_datetime(frame['Date'], dayfirst=True, errors='coerce')
+    for column in NUMERIC_COLUMNS:
+        if column in frame.columns:
+            frame[column] = pd.to_numeric(frame[column], errors='coerce')
+    frame['Date'] = pd.to_datetime(frame['Date'], format='mixed', dayfirst=True, errors='coerce')
     return frame.dropna(subset=['Date', 'HomeTeam', 'AwayTeam'])
 
 
@@ -55,10 +77,7 @@ def load_season(league, season):
     except Exception as error:
         print(f'  skip {league} {season}: {error}')
         return pd.DataFrame()
-    frame = parse_csv(body)
-    frame['League'] = league
-    frame['Season'] = season
-    return frame
+    return parse_csv(body).assign(League=league, Season=season)
 
 
 def load_results():

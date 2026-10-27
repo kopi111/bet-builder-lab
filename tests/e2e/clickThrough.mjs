@@ -18,6 +18,7 @@ await page.waitForSelector('.fixture-card', { timeout: 30000 });
 await page.screenshot({ path: `${SHOTS}/01-fixtures.png`, fullPage: false });
 
 step('filter Premier League + analyse all');
+await page.getByRole('combobox', { name: 'Day' }).selectOption('all');
 await page.getByRole('button', { name: 'Premier League' }).click();
 const analyseAll = page.getByRole('button', { name: /Analyse all/ });
 await analyseAll.click();

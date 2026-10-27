@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { RatingTable } from '../js/model/ratingTable.js';
-import { similarPicks, threeMarketPicks } from '../js/model/threeMarkets.js';
+import { leagueRating, similarPicks, threeMarketPicks } from '../js/model/threeMarkets.js';
 import { DEFAULT_SETTINGS } from '../js/config.js';
 
 // A stand-in league: Strong attacks well, Weak concedes a lot, both have a full season of matches.
@@ -38,4 +38,13 @@ test('similar picks finds the confidence band a probability falls in', () => {
   const study = { markets: { goals: { bands: [{ from: 0.5, to: 0.6, hitRate: 0.55 }, { from: 0.6, to: 1, hitRate: 0.66 }] } } };
   assert.equal(similarPicks(study, 'goals', 0.63).hitRate, 0.66);
   assert.equal(similarPicks(study, 'goals', 0.52).hitRate, 0.55);
+});
+
+test('league rating: good needs a positive record in both halves, avoid means 5%+ lost at Bet365', () => {
+  const entry = (league, best, before, after, bet365) => ({ league, best: { roi: best, before, after }, bet365: { roi: bet365 } });
+  const staking = { leagues: [entry('SP1', 0.06, 0.06, 0.08, 0.03), entry('B1', 0.06, 0.07, -0.01, 0.03), entry('I2', -0.07, -0.13, 0.1, -0.1)] };
+  assert.equal(leagueRating(staking, 'SP1').rating, 'good');
+  assert.equal(leagueRating(staking, 'B1').rating, 'neutral');
+  assert.equal(leagueRating(staking, 'I2').rating, 'avoid');
+  assert.equal(leagueRating(staking, 'E0').rating, 'unknown');
 });

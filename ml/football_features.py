@@ -105,7 +105,8 @@ def start_new_season(league):
 
 
 def fair_probabilities(prices):
-    inverse = 1 / np.asarray(prices, dtype=float)
+    prices = np.asarray(prices, dtype=float)
+    inverse = np.where(prices > 1, 1 / np.where(prices > 1, prices, 1), np.nan)
     return inverse / inverse.sum(axis=1, keepdims=True)
 
 

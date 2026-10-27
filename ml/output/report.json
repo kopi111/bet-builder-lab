@@ -1,0 +1,381 @@
+{
+ "trained_at": "2026-10-19T23:45:00+00:00",
+ "matches": 72782,
+ "seasons_loaded": [
+  "1617",
+  "1718",
+  "1819",
+  "1920",
+  "2021",
+  "2122",
+  "2223",
+  "2324",
+  "2425",
+  "2526",
+  "2627"
+ ],
+ "value_margin": 0.05,
+ "summary": {
+  "result": {
+   "matches": 33991,
+   "bookmaker_open_log_loss": 0.9991609603670677,
+   "bookmaker_close_log_loss": 0.9959791089383139,
+   "stats_log_loss": 1.010782911441332,
+   "stats_market_log_loss": 1.001621321941679,
+   "stats_betting": {
+    "bets": 20909,
+    "roi_at_open": -0.0842044095843895,
+    "roi_at_close": -0.10140178870342914,
+    "closing_line_value": 0.01757947288246675
+   },
+   "stats_market_betting": {
+    "bets": 11976,
+    "roi_at_open": -0.0697436539746159,
+    "roi_at_close": -0.08124665998663994,
+    "closing_line_value": 0.015369236554983741
+   }
+  },
+  "over25": {
+   "matches": 33987,
+   "bookmaker_open_log_loss": 0.6769121902812588,
+   "bookmaker_close_log_loss": 0.674551263059953,
+   "stats_log_loss": 0.68200270763524,
+   "stats_market_log_loss": 0.6782204149548944,
+   "stats_betting": {
+    "bets": 9806,
+    "roi_at_open": -0.05292270038751785,
+    "roi_at_close": -0.05829390169284113,
+    "closing_line_value": 0.0055494187336086066
+   },
+   "stats_market_betting": {
+    "bets": 3224,
+    "roi_at_open": -0.04675248138957816,
+    "roi_at_close": -0.055282258064516136,
+    "closing_line_value": 0.007053962690323928
+   }
+  }
+ },
+ "seasons": [
+  {
+   "season": "2122",
+   "result": {
+    "matches": 6722,
+    "bookmaker_open_log_loss": 1.0012602381215578,
+    "bookmaker_close_log_loss": 0.9968667238509278,
+    "stats_log_loss": 1.0146550144342168,
+    "stats_betting": {
+     "bets": 4449,
+     "roi_at_open": -0.09453809844908968,
+     "roi_open_std_error": 0.02540271944220766,
+     "roi_at_close": -0.11371094628006291,
+     "closing_line_value": 0.016633409307186285
+    },
+    "stats_market_log_loss": 1.0057617104822019,
+    "stats_market_betting": {
+     "bets": 3652,
+     "roi_at_open": -0.06040799561883899,
+     "roi_open_std_error": 0.0292596854452791,
+     "roi_at_close": -0.07083789704271631,
+     "closing_line_value": 0.009759124397310734
+    }
+   },
+   "over25": {
+    "matches": 6717,
+    "bookmaker_open_log_loss": 0.6802869307351767,
+    "bookmaker_close_log_loss": 0.6767713922530999,
+    "stats_log_loss": 0.6843773141169847,
+    "stats_betting": {
+     "bets": 1741,
+     "roi_at_open": -0.04033314187248708,
+     "roi_open_std_error": 0.02692624151978041,
+     "roi_at_close": -0.04854681217690982,
+     "closing_line_value": 0.005475476796701022
+    },
+    "stats_market_log_loss": 0.6810840338573293,
+    "stats_market_betting": {
+     "bets": 1022,
+     "roi_at_open": -0.007064579256360072,
+     "roi_open_std_error": 0.03510088154807858,
+     "roi_at_close": -0.01993150684931507,
+     "closing_line_value": 0.008682190402503008
+    }
+   }
+  },
+  {
+   "season": "2223",
+   "result": {
+    "matches": 6664,
+    "bookmaker_open_log_loss": 0.9972945033942544,
+    "bookmaker_close_log_loss": 0.9940261344268843,
+    "stats_log_loss": 1.0059012003738925,
+    "stats_betting": {
+     "bets": 4285,
+     "roi_at_open": -0.056042007001166856,
+     "roi_open_std_error": 0.025344450429246594,
+     "roi_at_close": -0.07882147024504084,
+     "closing_line_value": 0.022045476053648257
+    },
+    "stats_market_log_loss": 1.0025506351487647,
+    "stats_market_betting": {
+     "bets": 3043,
+     "roi_at_open": -0.10064738744659875,
+     "roi_open_std_error": 0.030934365260851943,
+     "roi_at_close": -0.11529411764705884,
+     "closing_line_value": 0.019472545319207512
+    }
+   },
+   "over25": {
+    "matches": 6666,
+    "bookmaker_open_log_loss": 0.6751619249017918,
+    "bookmaker_close_log_loss": 0.6739136831144916,
+    "stats_log_loss": 0.6781398248981144,
+    "stats_betting": {
+     "bets": 1733,
+     "roi_at_open": -0.014448932487016737,
+     "roi_open_std_error": 0.026731793172240385,
+     "roi_at_close": -0.011004039238315071,
+     "closing_line_value": -0.0018940404333712675
+    },
+    "stats_market_log_loss": 0.6771505355407438,
+    "stats_market_betting": {
+     "bets": 840,
+     "roi_at_open": -0.0369404761904762,
+     "roi_open_std_error": 0.03954132196978188,
+     "roi_at_close": -0.033238095238095254,
+     "closing_line_value": -0.0032960514046241696
+    }
+   }
+  },
+  {
+   "season": "2324",
+   "result": {
+    "matches": 6666,
+    "bookmaker_open_log_loss": 0.9911499722037067,
+    "bookmaker_close_log_loss": 0.9876713533954724,
+    "stats_log_loss": 1.0030442470009984,
+    "stats_betting": {
+     "bets": 4307,
+     "roi_at_open": -0.07785233341072671,
+     "roi_open_std_error": 0.024540415964687385,
+     "roi_at_close": -0.09239609937311352,
+     "closing_line_value": 0.017551817744495494
+    },
+    "stats_market_log_loss": 0.9920453387911586,
+    "stats_market_betting": {
+     "bets": 2256,
+     "roi_at_open": -0.06757978723404255,
+     "roi_open_std_error": 0.035563361405280436,
+     "roi_at_close": -0.07645833333333334,
+     "closing_line_value": 0.014571017172440205
+    }
+   },
+   "over25": {
+    "matches": 6665,
+    "bookmaker_open_log_loss": 0.6724176185510928,
+    "bookmaker_close_log_loss": 0.6695360199075029,
+    "stats_log_loss": 0.679038585058151,
+    "stats_betting": {
+     "bets": 1980,
+     "roi_at_open": -0.0862070707070707,
+     "roi_open_std_error": 0.025171239506710155,
+     "roi_at_close": -0.08973232323232325,
+     "closing_line_value": 0.0028205548653486524
+    },
+    "stats_market_log_loss": 0.6747124595051905,
+    "stats_market_betting": {
+     "bets": 783,
+     "roi_at_open": -0.0877522349936143,
+     "roi_open_std_error": 0.03999846160425645,
+     "roi_at_close": -0.09505747126436782,
+     "closing_line_value": 0.00939680460317021
+    }
+   }
+  },
+  {
+   "season": "2425",
+   "result": {
+    "matches": 6557,
+    "bookmaker_open_log_loss": 0.9994874388852433,
+    "bookmaker_close_log_loss": 0.9967225035724074,
+    "stats_log_loss": 1.0098809403566913,
+    "stats_betting": {
+     "bets": 3806,
+     "roi_at_open": -0.08151077246452972,
+     "roi_open_std_error": 0.027149941094449785,
+     "roi_at_close": -0.09673410404624277,
+     "closing_line_value": 0.017173812785144845
+    },
+    "stats_market_log_loss": 1.0006200582885452,
+    "stats_market_betting": {
+     "bets": 1745,
+     "roi_at_open": -0.041971346704871064,
+     "roi_open_std_error": 0.04631451015786522,
+     "roi_at_close": -0.04693982808022922,
+     "closing_line_value": 0.01642387827028375
+    }
+   },
+   "over25": {
+    "matches": 6557,
+    "bookmaker_open_log_loss": 0.6761873909394637,
+    "bookmaker_close_log_loss": 0.6736513640491528,
+    "stats_log_loss": 0.682562091218852,
+    "stats_betting": {
+     "bets": 2215,
+     "roi_at_open": -0.0795665914221219,
+     "roi_open_std_error": 0.02349457203625824,
+     "roi_at_close": -0.08790067720090293,
+     "closing_line_value": 0.008559802806804448
+    },
+    "stats_market_log_loss": 0.6767470780317829,
+    "stats_market_betting": {
+     "bets": 335,
+     "roi_at_open": -0.050447761194029876,
+     "roi_open_std_error": 0.07004352622196773,
+     "roi_at_close": -0.06791044776119405,
+     "closing_line_value": 0.015223702657206985
+    }
+   }
+  },
+  {
+   "season": "2526",
+   "result": {
+    "matches": 6512,
+    "bookmaker_open_log_loss": 1.005628959506771,
+    "bookmaker_close_log_loss": 1.0038869797155294,
+    "stats_log_loss": 1.0189599199085981,
+    "stats_betting": {
+     "bets": 3540,
+     "roi_at_open": -0.11093220338983052,
+     "roi_open_std_error": 0.02677187209285256,
+     "roi_at_close": -0.12548022598870057,
+     "closing_line_value": 0.01592717357386299
+    },
+    "stats_market_log_loss": 1.0062528122938086,
+    "stats_market_betting": {
+     "bets": 1134,
+     "roi_at_open": -0.07777777777777777,
+     "roi_open_std_error": 0.0569435735284954,
+     "roi_at_close": -0.09911816578483246,
+     "closing_line_value": 0.022748725217308464
+    }
+   },
+   "over25": {
+    "matches": 6512,
+    "bookmaker_open_log_loss": 0.6811942490924009,
+    "bookmaker_close_log_loss": 0.679510196668043,
+    "stats_log_loss": 0.6866774851969001,
+    "stats_betting": {
+     "bets": 1844,
+     "roi_at_open": -0.03143709327548808,
+     "roi_open_std_error": 0.02597540336461644,
+     "roi_at_close": -0.04085140997830802,
+     "closing_line_value": 0.011790412309540015
+    },
+    "stats_market_log_loss": 0.6822145569089278,
+    "stats_market_betting": {
+     "bets": 200,
+     "roi_at_open": -0.15225,
+     "roi_open_std_error": 0.08724013637353142,
+     "roi_at_close": -0.18045000000000003,
+     "closing_line_value": 0.018255281453765735
+    }
+   }
+  },
+  {
+   "season": "2627",
+   "result": {
+    "matches": 870,
+    "bookmaker_open_log_loss": 1.0077444560644002,
+    "bookmaker_close_log_loss": 1.0029412698959899,
+    "stats_log_loss": 1.0231448984041651,
+    "stats_betting": {
+     "bets": 522,
+     "roi_at_open": -0.11810344827586207,
+     "roi_open_std_error": 0.07394660758244974,
+     "roi_at_close": -0.12689655172413794,
+     "closing_line_value": 0.0033733537637248745
+    },
+    "stats_market_log_loss": 1.0087637234364957,
+    "stats_market_betting": {
+     "bets": 146,
+     "roi_at_open": 0.03787671232876715,
+     "roi_open_std_error": 0.15886790111226923,
+     "roi_at_close": 0.022808219178082192,
+     "closing_line_value": 0.012587414781232747
+    }
+   },
+   "over25": {
+    "matches": 870,
+    "bookmaker_open_log_loss": 0.672111271060697,
+    "bookmaker_close_log_loss": 0.670381329606037,
+    "stats_log_loss": 0.6767677558246904,
+    "stats_betting": {
+     "bets": 293,
+     "roi_at_open": -0.06416382252559726,
+     "roi_open_std_error": 0.06698775553738529,
+     "roi_at_close": -0.069419795221843,
+     "closing_line_value": 0.006419743755931599
+    },
+    "stats_market_log_loss": 0.6723907929773341,
+    "stats_market_betting": {
+     "bets": 44,
+     "roi_at_open": 0.08136363636363636,
+     "roi_open_std_error": 0.22309674019854908,
+     "roi_at_close": 0.07568181818181818,
+     "closing_line_value": 0.012017400384791111
+    }
+   }
+  }
+ ],
+ "top_features": [
+  {
+   "feature": "elo_diff",
+   "log_loss_gain": 0.04910431042382557
+  },
+  {
+   "feature": "home_corners_against",
+   "log_loss_gain": 0.0014132120466855784
+  },
+  {
+   "feature": "league_id",
+   "log_loss_gain": 0.0013925241718993526
+  },
+  {
+   "feature": "away_shots_against",
+   "log_loss_gain": 0.0013465424425904704
+  },
+  {
+   "feature": "home_shots_for",
+   "log_loss_gain": 0.0013156657195295314
+  },
+  {
+   "feature": "home_shots_against",
+   "log_loss_gain": 0.0010239742972633081
+  },
+  {
+   "feature": "home_corners_for",
+   "log_loss_gain": 0.0008924221213437722
+  },
+  {
+   "feature": "away_shots_for",
+   "log_loss_gain": 0.0004523034382524216
+  },
+  {
+   "feature": "away_corners_for",
+   "log_loss_gain": 0.00041379545971424275
+  },
+  {
+   "feature": "away_elo",
+   "log_loss_gain": 0.0003754813651358398
+  },
+  {
+   "feature": "away_points_form",
+   "log_loss_gain": 0.00027593984791685067
+  },
+  {
+   "feature": "home_rest_days",
+   "log_loss_gain": 0.00021640974679426606
+  }
+ ],
+ "verdict": "The model does not beat Bet365 in testing. Use it to study matches, not to pick bets: the bookmaker already prices in what the model learns."
+}

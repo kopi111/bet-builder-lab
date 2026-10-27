@@ -12,6 +12,9 @@ const OPENING_ODDS_COLUMNS = {
   handicapLine: 'AHh', handicapHome: 'B365AHH', handicapAway: 'B365AHA'
 };
 
+// Highest price across the bookmakers football-data.co.uk tracks, to show what shopping around would get.
+const BEST_ODDS_COLUMNS = { home: 'MaxH', draw: 'MaxD', away: 'MaxA', over25: 'Max>2.5', under25: 'Max<2.5' };
+
 const CLOSING_ODDS_COLUMNS = {
   home: 'B365CH', draw: 'B365CD', away: 'B365CA', over25: 'B365C>2.5', under25: 'B365C<2.5',
   handicapLine: 'AHCh', handicapHome: 'B365CAHH', handicapAway: 'B365CAHA'
@@ -36,7 +39,7 @@ export function toMatchRecord(row) {
     referee: row.Referee || '',
     played: Number.isFinite(stats.homeGoals) && Number.isFinite(stats.awayGoals),
     stats,
-    odds: { opening: readColumns(row, OPENING_ODDS_COLUMNS), closing: readColumns(row, CLOSING_ODDS_COLUMNS) }
+    odds: { opening: readColumns(row, OPENING_ODDS_COLUMNS), best: readColumns(row, BEST_ODDS_COLUMNS), closing: readColumns(row, CLOSING_ODDS_COLUMNS) }
   };
 }
 

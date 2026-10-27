@@ -32,7 +32,7 @@ export async function renderBuilder(view, id, isCurrent) {
     h('div', { class: 'builder-main' },
       section(`${fixture.home} v ${fixture.away}`, `${kickoffText(fixture.kickoff)} · Bet Builder workspace`,
         h('p', { class: 'muted' }, 'Market list follows what Bet365 Bet Builder typically offers. Whether a market is offered for this match is not verified by any feed: check the app. Prices for Bet Builder legs are never invented here.'),
-        h('div', { class: 'hero-actions' }, buttonLink(`#/match/${encodeURIComponent(fixture.id)}`, 'Back to match report'), buttonLink('#/builder', 'Choose another match', 'ghost'))),
+        h('div', { class: 'hero-actions' }, buttonLink(`#/match/${encodeURIComponent(fixture.id)}`, 'Back to match report'), buttonLink('#/fixtures', 'Choose another match', 'ghost'))),
       profilesSection(analysis),
       catalogueSection(analysis)),
     h('div', { class: 'builder-side' }, slipPanel(analysis))));

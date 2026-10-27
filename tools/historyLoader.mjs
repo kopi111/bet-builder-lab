@@ -18,6 +18,15 @@ async function loadSeason(leagueCode, season) {
   return parseCsv(await response.text())
     .filter((row) => row.Div && row.HomeTeam && row.AwayTeam && row.Date)
     .flatMap((row) => {
-      try { return [{ ...toMatchRecord(row), season }]; } catch { return []; }
+      try { return [{ ...toMatchRecord(row), season, otherOdds: otherOdds(row) }]; } catch { return []; }
     });
+}
+
+// Best price across bookmakers (Max*) and Betfair exchange (BFE*) opening odds, for price-shopping comparisons.
+function otherOdds(row) {
+  const number = (column) => Number.parseFloat(row[column]) || null;
+  return {
+    best: { home: number('MaxH'), draw: number('MaxD'), away: number('MaxA'), over25: number('Max>2.5'), under25: number('Max<2.5') },
+    exchange: { home: number('BFEH'), draw: number('BFED'), away: number('BFEA'), over25: number('BFE>2.5'), under25: number('BFE<2.5') }
+  };
 }
