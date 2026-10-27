@@ -27,6 +27,11 @@ export function matchId(league, kickoff, home, away) {
   return [league, kickoff.toISOString().slice(0, 10), home, away].join('|');
 }
 
+export function isBeforeToday(id) {
+  const matchDay = id.split('|')[1] || '';
+  return /^\d{4}-\d{2}-\d{2}$/.test(matchDay) && matchDay < new Date().toISOString().slice(0, 10);
+}
+
 export function toMatchRecord(row) {
   const kickoff = parseUkKickoff(row.Date, row.Time);
   const stats = readColumns(row, STAT_COLUMNS);

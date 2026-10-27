@@ -3,6 +3,7 @@ import { decimalOdds, dayHeading, kickoffText, percent, signedPercent, stampText
 import { localDateKey } from '../util/time.js';
 import { CUP_COMPETITIONS, FEATURED_LEAGUES, LEAGUES, leagueByCode } from '../config.js';
 import { loadFixtures, loadLeagueHistory } from '../data/feeds.js';
+import { isBeforeToday } from '../data/matchRecord.js';
 import { analyse, analysisIfReady, customMatchId } from './matchService.js';
 import { isMatchSaved, recentAnalyses, savedMatches, toggleSavedMatch } from '../store/appState.js';
 import { button, buttonLink, emptyState, errorPanel, kpi, loadingPanel, section } from './components.js';
@@ -32,7 +33,7 @@ function drawMain(container, feed) {
 }
 
 function kpiRow(feed) {
-  const recent = recentAnalyses();
+  const recent = recentAnalyses().filter((item) => !isBeforeToday(item.id));
   const withValue = recent.filter((item) => item.potentialValue.length > 0).length;
   const upcoming = feed.fixtures.filter((f) => f.kickoff > new Date()).length;
   return h('div', { class: 'kpi-row' },
@@ -256,10 +257,10 @@ function customMatchupPanel() {
 }
 
 function sidePanels() {
-  const recent = recentAnalyses();
+  const recent = recentAnalyses().filter((item) => !isBeforeToday(item.id));
   const best = recent.flatMap((item) => item.topMarkets.map((market) => ({ ...market, item })))
     .sort((a, b) => b.probability - a.probability).slice(0, 6);
-  const saved = savedMatches();
+  const saved = savedMatches().filter((item) => !isBeforeToday(item.id));
   return [
     section('Best-supported markets', 'Highest-evidence selections from your recent analyses (not the biggest payouts).',
       best.length ? h('ul', { class: 'compact-list' }, best.map((m) => h('li', {}, h('a', { href: `#/match/${encodeURIComponent(m.item.id)}` }, `${m.item.home} v ${m.item.away}`), h('span', {}, `${m.label} · ${percent(m.probability, 0)} · ${m.confidence}`))))

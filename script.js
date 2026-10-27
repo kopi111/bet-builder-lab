@@ -9,6 +9,7 @@ import { renderSources } from './js/ui/sourcesView.js';
 import { renderError } from './js/ui/components.js';
 import { onSourceChange, sourceEntries } from './js/data/sourceStatus.js';
 import { draftSlip } from './js/store/appState.js';
+import { isBeforeToday } from './js/data/matchRecord.js';
 
 const ROUTES = {
   fixtures: { title: 'Fixtures', render: renderFixtures },
@@ -52,7 +53,8 @@ function parseHash() {
 
 function parameterOrRemembered(name, parameter) {
   if (parameter || (name !== 'match' && name !== 'builder')) return parameter;
-  return draftSlip().matchId;
+  const remembered = draftSlip().matchId;
+  return isBeforeToday(remembered) ? '' : remembered;
 }
 
 function highlightNavigation(name) {
